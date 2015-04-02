@@ -5842,7 +5842,7 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
-@media only screen {
+@media only screen and (max-width: 40em) {
   h1 {
     color: #16a085; } }
 body {
