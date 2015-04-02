@@ -5844,7 +5844,8 @@ th.hide-for-touch {
     display: table-cell !important; } }
 @media only screen and (max-width: 40em) {
   h1 {
-    color: #16a085; } }
+    color: #16a085;
+    font-size: 1em; } }
 body {
   background: #fff;
   margin: 0;
