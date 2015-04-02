@@ -1,78 +1,84 @@
-/*body{
-  background:#fff;
-  margin:0;
-  padding:0;
-  font-family: 'Lato', sans-serif;
-}*/
-body {
-  background: #14191f; }
+@import url('../fonts/bebasneue/stylesheet.css');
+/* line 2, ../scss/app.scss */
+body#home {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'bebas_neuebold', 'Futura', sans-serif;
+}
 
-.gifs {
-  width: 95%;
-  padding: 5%; }
-  .gifs img {
-    width: 100%;
-    margin: 5% 0%; }
-
-p {
-  color: #fff; }
-
-span {
-  color: #fff; }
-  span h2:hover {
-    text-decoration: underline; }
-
-nav {
-  color: #252525;
-  padding: 1em 0; }
-  nav ul {
-    list-style-type: none;
-    width: 90%;
-    margin: 0 auto; }
-  nav li {
-    width: 100%;
-    padding: 0.4rem 0em;
-    border-bottom: 0.12rem black solid;
-    font-size: 1.7rem; }
-  nav a {
-    color: inherit; }
-  nav a:hover {
-    color: inherit;
-    text-decoration: line-through; }
-
+/* line 8, ../scss/app.scss */
 hr {
   width: 60%;
   margin: 1em auto;
   background-color: #666;
-  border-color: #666; }
+  border-color: #666;
+}
 
-section {
-  background: #14191f;
-  width: 100%;
-  margin: 1rem 0rem auto;
-  padding: 3em 10%; }
-  section p {
-    color: #ddd; }
-
+/* line 14, ../scss/app.scss */
 h1 {
   color: #D64541;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'bebas_neuebold', sans-serif;
   font-weight: 900;
-  font-size: 7.8rem;
-  line-height: 6.9rem; }
+  font-size: 7rem;
+  line-height: 7.8rem;
+}
 
+/* line 21, ../scss/app.scss */
 h2 {
   font-weight: 700;
+  color: #fff;
+  padding: 0.9rem 0em;
+}
+
+/* line 26, ../scss/app.scss */
+h3 {
   color: #D64541;
-  padding: 0.9rem 0em; }
+}
 
-.contentstuff {
-  width: 90%;
-  margin: 0 auto; }
+/* line 29, ../scss/app.scss */
+section {
+  border: 1.7em solid #ecf0f1;
+  background: #14191f;
+  min-height: 100%;
+}
 
+/* line 34, ../scss/app.scss */
 .titles {
-  margin: 4em 0em; }
+  padding-top: 14em;
+}
+/* line 36, ../scss/app.scss */
+.titles h4 {
+  font-size: 1.3em;
+  color: #fff;
+  font-size: 1.5rem;
+}
+/* line 37, ../scss/app.scss */
+.titles p {
+  color: #fff;
+  font-size: 1.3em;
+}
 
+/* line 39, ../scss/app.scss */
 .button {
   background: #D64541;
-  margin: 4em 0em; }
+  margin: 3em 0em;
+  background: transparent;
+  border: 0.12em solid #D64541;
+}
+
+/* line 45, ../scss/app.scss */
+.social-icons {
+  margin: 2em 0em;
+}
+/* line 47, ../scss/app.scss */
+.social-icons img {
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.8;
+  bottom: true;
+}
+/* line 53, ../scss/app.scss */
+.social-icons img:hover {
+  opacity: 1;
+}
