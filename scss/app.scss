@@ -1,4 +1,60 @@
 body{
-	background:url('../img/hisoka.jpg') fixed center center no-repeat;
-	background-size: cover;
+  background:#fff;
+  margin:0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
 }
+span{
+  color:#fff;
+  h2:hover{text-decoration:underline;}
+}
+nav{
+  color:#252525;
+  padding: 1em 0;
+  ul{
+    list-style-type:none;
+    width:90%;
+    margin:0 auto;
+  }
+  li{
+    width:100%;
+    padding: 0.4rem 0em;
+    border-bottom:0.12rem black solid;
+    font-size:1.7rem;
+  }
+  a{color:inherit;}
+  a:hover{color:inherit;text-decoration:line-through;}
+}
+
+hr{
+  width:60%;
+  margin: 1em auto;
+  background-color:#666;
+  border-color:#666;
+}
+section{
+  background:#14191f;
+  width:100%;
+  margin:1rem 0rem auto;
+  padding: 3em 10%;
+
+  p{color:#ddd;}
+}
+h1{
+  color:#D64541;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:900;
+  font-size:8.6rem;
+  line-height:6.9rem;
+}
+h2{
+  font-weight:700;
+  color:#fff;
+  padding:0.9rem 0em;
+}
+.contentstuff{
+  width:90%;
+  margin:0 auto;
+}
+.titles{margin:4em 0em;}
+.button{background:#D64541; margin:4em 0em;}
