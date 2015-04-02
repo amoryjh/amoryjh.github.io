@@ -15,8 +15,7 @@ h1{
   color:#D64541;
   font-family: 'bebas_neuebold', sans-serif;
   font-weight:900;
-  font-size:7rem;
-  line-height:7.8rem;
+  font-size:6.6rem;
 }
 h2{
   font-weight:700;
@@ -33,24 +32,6 @@ section{
 }
 .titles{
   padding-top: 14em;  
-  h4{font-size: 1.3em;color:#fff;font-size: 1.5rem;}
   p{color: #fff;font-size: 1.3em}
 }
-.button{
-  background:#D64541; 
-  margin:3em 0em;
-  background: transparent;
-  border:0.12em solid #D64541;
-}
-.social-icons{
-  margin:2em 0em;
-  img{
-    width:3rem;
-    height:3rem;
-    opacity:0.8;
-    bottom:true;
-  }
-  img:hover{
-    opacity: 1;
-  }
-}
+.social-icons{a{font-size: 1.2em; color: #D64541;}a:hover{text-decoration: line-through;}}
