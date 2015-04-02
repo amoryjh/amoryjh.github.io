@@ -7,9 +7,13 @@
 body {
   background: #14191f; }
 
-img {
-  width: 75%;
-  margin: 2em 0; }
+.gifs {
+  width: 95%;
+  background: #ccc;
+  padding: 5%; }
+  .gifs img {
+    width: 100%;
+    margin: 5% 0%; }
 
 span {
   color: #fff; }
