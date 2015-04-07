@@ -1,38 +1,101 @@
+/*
+  Imports
+*/
 @import "../fonts/bebasneue/stylesheet.css";
-body#home{
-  background:#fff;
-  margin:0;
-  padding:0;
-  font-family: 'bebas_neuebold', 'Futura', sans-serif;
-}
-hr{
-  width:60%;
-  margin: 1em auto;
-  background-color:#666;
-  border-color:#666;
-}
+/*
+  Resusable Vars
+*/
+$primary-color:#D64541;
+$primary-heading:'bebas_neuebold';
+$primary-body: 'Lato','Futura','Open Sans Condensed',sans-serif;
+$primary-backg:#14192c;
+/*
+  Typography
+*/
+h1,h3,h4{color: $primary-color;}
+h2,h3,p{font-family: $primary-body;}
+h2,p{color: #fff;}
+h4{font-family: $primary-heading;}
+a,a:hover{color: inherit;font-family: inherit;}
 h1{
-  color:#D64541;
-  font-family: 'bebas_neuebold', sans-serif;
+  font-family: 'Open Sans Condensed';
   font-weight:900;
-  font-size:6rem;
-}
+  font-size:8rem;
+  line-height:6.9rem;}
 h2{
-  font-weight:700;
-  color:#fff;
-  padding:0.9rem 0em;
-}
-h3{
-  color:#D64541;
-}
+  font-weight: 700;}
+h4{
+  border: 0.12rem solid $primary-color;
+  border-radius: 3%;
+  max-width: 8em;
+  padding: 0.5em;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 1.8rem;}
+p{font-size: 1.1rem}
+/*
+  HTML Elements
+*/
+body{
+  background: $primary-backg;}
 section{
-  border:1rem solid #ecf0f1;
-  background: #14191f;
-  min-height: 100%;
-  padding: 1em 0em;
+  height: 100%;
+  z-index: 10;}
+hr{
+  width: 50%;
+  border-color: #fff;
+  margin: 0 auto;
+  padding: 0.1em;}
+article{
+  hr{
+    width: 8em;
+    margin: 0;}
 }
-.titles{
-  padding-top: 8em;  
-  p{color: #fff;font-size: 1.3em}
+/*
+  Theme Classes
+*/
+.logo{z-index: 1000;}
+.logo > *{
+    font-family: $primary-heading;
+    font-weight:700;
+    position: fixed;
+    left: 0.9em;
+    top: 0.6em;
+    border-bottom: 0.125em solid $primary-color;
+    border-top: 0.125em solid $primary-color;}
+.port-col{
+  height: 100%;
+  background: $primary-backg;}
+.port-col:hover{
+  background: $primary-color;
+  h4,a{color: #eee;border: none;}
+  h4:hover{text-decoration: line-through;}
+  -webkit-transition: all 1.6s ease;
+  -moz-transition: all 1.6s ease;
+  -ms-transition: all 1.6s ease;
+  -o-transition: all 1.6s ease;
+  transition: all 1.6s ease;}
+#titles{margin: 12em 0 6rem 0}
+#titles > * {padding: 0.03em}
+#blog{border: 0.6rem solid #fff;padding: 3% 10%;}
+.social-icons{
+  margin: 2em 0em;
+  img{
+    width: 5rem;
+    height: 5rem;
+    opacity: 0.8;
+    margin: 1em 1em 1em 0;
+  }
+  img:hover{opacity: 1;}
 }
-.social-icons{a{font-size: 1.2em; color: #D64541;}a:hover{text-decoration: line-through;}}
+/*
+  Mixins
+*/
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);}
+.port-col > *  {
+  @extend %vertical-align;}

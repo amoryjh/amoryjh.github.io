@@ -1,27 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title></title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/foundation.css">
 <link rel="stylesheet" type="text/css" href="css/app.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.smooth-scroll.min.js"></script>
 </head>
 
-<body id="home">
-
-<section class="large-12 large-centered">
-<div class="titles text-center">
-  <h1>Work in progress</h1>
-  <hr>
-  <p>I'll get around to this soon</p>
-</div>
-<div class="social-icons text-center">
-  <a href="http://www.twitter.com/joshamory">@joshamory</a>
-</div>
+<body class="text-center">
+<section id="top">
+	<div class="port-col medium-4 columns clearfix">
+    <a class="logo" href="#top"><h2>-J.H-</h2></a>
+		<h4 class="clearfix"><a href="https://github.com/amoryjh">Github</a></h4>
+	</div>
+	<div class="port-col medium-4 columns clearfix">
+		<h4 class="text-center"><a class="text-center" href="http://codepen.io/joshamory/">codepen</a></h4>
+	</div>
+	<div class="port-col medium-4 columns clearfix">
+		<h4><a id="blogLink" href="#titles">Blog</a></h4>
+	</div>
 </section>
+<div id="blog" class="clearfix blog large-12 large-centered text-centered">
+<div id="titles">
+  <h1>COFFEE</h1>
+  <h1>&</h1>
+  <h1>CODE</h1>
+  <p>Web Developer || Programming Student || Gin & Fried Chicken Enthusiast</p>
+<hr>
+</div>
+<article class="text-left">  
+  <h2><a href="">Blog Post Title</a><hr></h2><p>Posted on: April 6th, 2015</p>
+  <p>I'll make an actual blog post soon. I Promise.</p>
+</article>
+<div class="social-icons text-left">
+  <h3>Find me elsewhere</h3>
+  <a href="https://www.behance.net/JoshAmory"><img src="img/behance.png"></a>
+  <a href="https://twitter.com/joshamory"><img src="img/twitter.png"></a>
+</div>
+</div>
 
+<script>
+  $(function()
+  {    
+    $('.port-col').hover(function() {
+      $(this).toggleClass('is-hover');
+    });
+
+    $('#blogLink').smoothScroll();
+    $('.logo').smoothScroll();
+
+  });
+</script>
 </body>
 </html>
