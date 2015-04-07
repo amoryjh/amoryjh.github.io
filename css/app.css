@@ -35,6 +35,16 @@ a, a:hover {
 }
 
 /* line 20, ../scss/app.scss */
+a:active {
+  color: inherit;
+}
+
+/* line 21, ../scss/app.scss */
+a:focus {
+  color: inherit;
+}
+
+/* line 22, ../scss/app.scss */
 h1 {
   font-family: 'Open Sans Condensed';
   font-weight: 900;
@@ -42,12 +52,12 @@ h1 {
   line-height: 5.5rem;
 }
 
-/* line 25, ../scss/app.scss */
+/* line 27, ../scss/app.scss */
 h2 {
   font-weight: 700;
 }
 
-/* line 27, ../scss/app.scss */
+/* line 29, ../scss/app.scss */
 h4 {
   border: 0.12rem solid #d64541;
   border-radius: 3%;
@@ -58,7 +68,7 @@ h4 {
   font-size: 1.8rem;
 }
 
-/* line 35, ../scss/app.scss */
+/* line 37, ../scss/app.scss */
 p {
   font-size: 1.1rem;
 }
@@ -66,19 +76,19 @@ p {
 /*
   HTML Elements
 */
-/* line 39, ../scss/app.scss */
+/* line 41, ../scss/app.scss */
 body {
   background: #14192c;
 }
 
-/* line 41, ../scss/app.scss */
+/* line 43, ../scss/app.scss */
 section {
   height: 100%;
   width: 100%;
   z-index: 10;
 }
 
-/* line 45, ../scss/app.scss */
+/* line 47, ../scss/app.scss */
 hr {
   width: 50%;
   border-color: #fff;
@@ -86,7 +96,11 @@ hr {
   padding: 0.1em;
 }
 
-/* line 51, ../scss/app.scss */
+/* line 52, ../scss/app.scss */
+article {
+  padding: 5em 0em;
+}
+/* line 54, ../scss/app.scss */
 article hr {
   width: 8em;
   margin: 0;
@@ -95,12 +109,12 @@ article hr {
 /*
   Theme Classes
 */
-/* line 58, ../scss/app.scss */
+/* line 61, ../scss/app.scss */
 .logo {
   z-index: 1000;
 }
 
-/* line 59, ../scss/app.scss */
+/* line 62, ../scss/app.scss */
 .logo > * {
   font-family: "bebas_neuebold";
   font-weight: 700;
@@ -111,13 +125,13 @@ article hr {
   border-top: 0.125em solid #d64541;
 }
 
-/* line 67, ../scss/app.scss */
+/* line 70, ../scss/app.scss */
 .port-col {
   height: 100%;
   background: #14192c;
 }
 
-/* line 70, ../scss/app.scss */
+/* line 73, ../scss/app.scss */
 .port-col:hover {
   background: #d64541;
   -webkit-transition: all 1.6s ease;
@@ -126,44 +140,44 @@ article hr {
   -o-transition: all 1.6s ease;
   transition: all 1.6s ease;
 }
-/* line 72, ../scss/app.scss */
+/* line 75, ../scss/app.scss */
 .port-col:hover h4, .port-col:hover a {
   color: #eee;
   border: none;
 }
-/* line 73, ../scss/app.scss */
+/* line 76, ../scss/app.scss */
 .port-col:hover h4:hover {
   text-decoration: line-through;
 }
 
-/* line 79, ../scss/app.scss */
+/* line 82, ../scss/app.scss */
 #titles {
   margin: 12em 0 6rem 0;
 }
 
-/* line 80, ../scss/app.scss */
+/* line 83, ../scss/app.scss */
 #titles > * {
   padding: 0.03em;
 }
 
-/* line 81, ../scss/app.scss */
+/* line 84, ../scss/app.scss */
 #blog {
   border: 0.6rem solid #fff;
   padding: 3% 10%;
 }
 
-/* line 82, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .social-icons {
   margin: 2em 0em;
 }
-/* line 84, ../scss/app.scss */
+/* line 87, ../scss/app.scss */
 .social-icons img {
   width: 5rem;
   height: 5rem;
   opacity: 0.8;
   margin: 1em 1em 1em 0;
 }
-/* line 90, ../scss/app.scss */
+/* line 93, ../scss/app.scss */
 .social-icons img:hover {
   opacity: 1;
 }
@@ -171,7 +185,7 @@ article hr {
 /*
   Mixins
 */
-/* line 95, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 .port-col > * {
   position: relative;
   top: 50%;
