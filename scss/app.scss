@@ -70,7 +70,7 @@ article{
 .port-col{
   height: 100%;
   background: $primary-backg;}
-.port-col:hover{
+.is-hover{
   background: $primary-color;
   h4,a{color: #eee;border: none;}
   h4:hover{text-decoration: line-through;}
@@ -79,6 +79,7 @@ article{
   -ms-transition: all 1.6s ease;
   -o-transition: all 1.6s ease;
   transition: all 1.6s ease;}
+
 #titles{margin: 12em 0 6rem 0}
 #titles > * {padding: 0.03em}
 #blog{border: 0.6rem solid #fff;padding: 3% 10%;}

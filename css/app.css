@@ -132,7 +132,7 @@ article hr {
 }
 
 /* line 73, ../scss/app.scss */
-.port-col:hover {
+.is-hover {
   background: #d64541;
   -webkit-transition: all 1.6s ease;
   -moz-transition: all 1.6s ease;
@@ -141,43 +141,43 @@ article hr {
   transition: all 1.6s ease;
 }
 /* line 75, ../scss/app.scss */
-.port-col:hover h4, .port-col:hover a {
+.is-hover h4, .is-hover a {
   color: #eee;
   border: none;
 }
 /* line 76, ../scss/app.scss */
-.port-col:hover h4:hover {
+.is-hover h4:hover {
   text-decoration: line-through;
 }
 
-/* line 82, ../scss/app.scss */
+/* line 83, ../scss/app.scss */
 #titles {
   margin: 12em 0 6rem 0;
 }
 
-/* line 83, ../scss/app.scss */
+/* line 84, ../scss/app.scss */
 #titles > * {
   padding: 0.03em;
 }
 
-/* line 84, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 #blog {
   border: 0.6rem solid #fff;
   padding: 3% 10%;
 }
 
-/* line 85, ../scss/app.scss */
+/* line 86, ../scss/app.scss */
 .social-icons {
   margin: 2em 0em;
 }
-/* line 87, ../scss/app.scss */
+/* line 88, ../scss/app.scss */
 .social-icons img {
   width: 5rem;
   height: 5rem;
   opacity: 0.8;
   margin: 1em 1em 1em 0;
 }
-/* line 93, ../scss/app.scss */
+/* line 94, ../scss/app.scss */
 .social-icons img:hover {
   opacity: 1;
 }
@@ -185,7 +185,7 @@ article hr {
 /*
   Mixins
 */
-/* line 98, ../scss/app.scss */
+/* line 99, ../scss/app.scss */
 .port-col > * {
   position: relative;
   top: 50%;
@@ -194,7 +194,7 @@ article hr {
   transform: translateY(-50%);
 }
 
-/* line 106, ../scss/app.scss */
+/* line 107, ../scss/app.scss */
 .port-col > * a {
   max-width: 100%;
 }
