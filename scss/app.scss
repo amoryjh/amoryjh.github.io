@@ -50,7 +50,7 @@ hr{
   margin: 0 auto;
   padding: 0.1em;}
 article{
-  padding: 5em 0em;
+  padding: 2em 0em;
   hr{
     width: 8em;
     margin: 0;}
@@ -101,5 +101,7 @@ article{
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);}
-.port-col > *  {
-  @extend %vertical-align;}
+.port-col > * {
+  @extend %vertical-align;
+  a{max-width: 100%;}
+}

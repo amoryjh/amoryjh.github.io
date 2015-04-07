@@ -98,7 +98,7 @@ hr {
 
 /* line 52, ../scss/app.scss */
 article {
-  padding: 5em 0em;
+  padding: 2em 0em;
 }
 /* line 54, ../scss/app.scss */
 article hr {
@@ -192,4 +192,9 @@ article hr {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+/* line 106, ../scss/app.scss */
+.port-col > * a {
+  max-width: 100%;
 }
