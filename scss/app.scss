@@ -17,6 +17,8 @@ h2,h3,p{font-family: $primary-body;}
 h2,p{color: #fff;}
 h4{font-family: $primary-heading;}
 a,a:hover{color: inherit;font-family: inherit;}
+a:active{color: inherit;}
+a:focus{color: inherit;}
 h1{
   font-family: 'Open Sans Condensed';
   font-weight:900;
