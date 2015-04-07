@@ -10,35 +10,42 @@
 */
 /* line 15, ../scss/app.scss */
 h1, h3, h4 {
-  color: #d64541; }
+  color: #d64541;
+}
 
 /* line 16, ../scss/app.scss */
 h2, h3, p {
-  font-family: "Lato", "Futura", "Open Sans Condensed", sans-serif; }
+  font-family: "Lato", "Futura", "Open Sans Condensed", sans-serif;
+}
 
 /* line 17, ../scss/app.scss */
 h2, p {
-  color: #fff; }
+  color: #fff;
+}
 
 /* line 18, ../scss/app.scss */
 h4 {
-  font-family: "bebas_neuebold"; }
+  font-family: "bebas_neuebold";
+}
 
 /* line 19, ../scss/app.scss */
 a, a:hover {
   color: inherit;
-  font-family: inherit; }
+  font-family: inherit;
+}
 
 /* line 20, ../scss/app.scss */
 h1 {
   font-family: 'Open Sans Condensed';
   font-weight: 900;
-  font-size: 8rem;
-  line-height: 6.9rem; }
+  font-size: 6.5rem;
+  line-height: 5.5rem;
+}
 
 /* line 25, ../scss/app.scss */
 h2 {
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 /* line 27, ../scss/app.scss */
 h4 {
@@ -48,44 +55,52 @@ h4 {
   padding: 0.5em;
   margin: 0 auto;
   font-weight: 700;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+}
 
 /* line 35, ../scss/app.scss */
 p {
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+}
 
 /*
   HTML Elements
 */
 /* line 39, ../scss/app.scss */
 body {
-  background: #14192c; }
+  background: #14192c;
+}
 
 /* line 41, ../scss/app.scss */
 section {
   height: 100%;
-  z-index: 10; }
+  width: 100%;
+  z-index: 10;
+}
 
-/* line 44, ../scss/app.scss */
+/* line 45, ../scss/app.scss */
 hr {
   width: 50%;
   border-color: #fff;
   margin: 0 auto;
-  padding: 0.1em; }
+  padding: 0.1em;
+}
 
-/* line 50, ../scss/app.scss */
+/* line 51, ../scss/app.scss */
 article hr {
   width: 8em;
-  margin: 0; }
+  margin: 0;
+}
 
 /*
   Theme Classes
 */
-/* line 57, ../scss/app.scss */
-.logo {
-  z-index: 1000; }
-
 /* line 58, ../scss/app.scss */
+.logo {
+  z-index: 1000;
+}
+
+/* line 59, ../scss/app.scss */
 .logo > * {
   font-family: "bebas_neuebold";
   font-weight: 700;
@@ -93,62 +108,74 @@ article hr {
   left: 0.9em;
   top: 0.6em;
   border-bottom: 0.125em solid #d64541;
-  border-top: 0.125em solid #d64541; }
+  border-top: 0.125em solid #d64541;
+}
 
-/* line 66, ../scss/app.scss */
+/* line 67, ../scss/app.scss */
 .port-col {
   height: 100%;
-  background: #14192c; }
+  background: #14192c;
+}
 
-/* line 69, ../scss/app.scss */
+/* line 70, ../scss/app.scss */
 .port-col:hover {
   background: #d64541;
   -webkit-transition: all 1.6s ease;
   -moz-transition: all 1.6s ease;
   -ms-transition: all 1.6s ease;
   -o-transition: all 1.6s ease;
-  transition: all 1.6s ease; }
-  /* line 71, ../scss/app.scss */
-  .port-col:hover h4, .port-col:hover a {
-    color: #eee;
-    border: none; }
-  /* line 72, ../scss/app.scss */
-  .port-col:hover h4:hover {
-    text-decoration: line-through; }
-
-/* line 78, ../scss/app.scss */
-#titles {
-  margin: 12em 0 6rem 0; }
+  transition: all 1.6s ease;
+}
+/* line 72, ../scss/app.scss */
+.port-col:hover h4, .port-col:hover a {
+  color: #eee;
+  border: none;
+}
+/* line 73, ../scss/app.scss */
+.port-col:hover h4:hover {
+  text-decoration: line-through;
+}
 
 /* line 79, ../scss/app.scss */
-#titles > * {
-  padding: 0.03em; }
+#titles {
+  margin: 12em 0 6rem 0;
+}
 
 /* line 80, ../scss/app.scss */
-#blog {
-  border: 0.6rem solid #fff;
-  padding: 3% 10%; }
+#titles > * {
+  padding: 0.03em;
+}
 
 /* line 81, ../scss/app.scss */
+#blog {
+  border: 0.6rem solid #fff;
+  padding: 3% 10%;
+}
+
+/* line 82, ../scss/app.scss */
 .social-icons {
-  margin: 2em 0em; }
-  /* line 83, ../scss/app.scss */
-  .social-icons img {
-    width: 5rem;
-    height: 5rem;
-    opacity: 0.8;
-    margin: 1em 1em 1em 0; }
-  /* line 89, ../scss/app.scss */
-  .social-icons img:hover {
-    opacity: 1; }
+  margin: 2em 0em;
+}
+/* line 84, ../scss/app.scss */
+.social-icons img {
+  width: 5rem;
+  height: 5rem;
+  opacity: 0.8;
+  margin: 1em 1em 1em 0;
+}
+/* line 90, ../scss/app.scss */
+.social-icons img:hover {
+  opacity: 1;
+}
 
 /*
   Mixins
 */
-/* line 94, ../scss/app.scss */
+/* line 95, ../scss/app.scss */
 .port-col > * {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+}

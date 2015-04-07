@@ -20,8 +20,8 @@ a,a:hover{color: inherit;font-family: inherit;}
 h1{
   font-family: 'Open Sans Condensed';
   font-weight:900;
-  font-size:8rem;
-  line-height:6.9rem;}
+  font-size:6.5rem;
+  line-height:5.5rem;}
 h2{
   font-weight: 700;}
 h4{
@@ -40,6 +40,7 @@ body{
   background: $primary-backg;}
 section{
   height: 100%;
+  width: 100%;
   z-index: 10;}
 hr{
   width: 50%;
