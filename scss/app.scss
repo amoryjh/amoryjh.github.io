@@ -1,12 +1,7 @@
 /*
-  Imports
-*/
-@import "../fonts/bebasneue/stylesheet.css";
-/*
   Resusable Vars
 */
 $primary-color:#D64541;
-$primary-heading:'bebas_neuebold';
 $primary-body: 'Lato','Futura','Open Sans Condensed',sans-serif;
 $primary-backg:#14192c;
 /*
@@ -15,7 +10,6 @@ $primary-backg:#14192c;
 h1,h3,h4{color: $primary-color;}
 h2,h3,p{font-family: $primary-body;}
 h2,p{color: #fff;}
-h4{font-family: $primary-heading;}
 a,a:hover{color: inherit;font-family: inherit;}
 a:active{color: inherit;}
 a:focus{color: inherit;}
@@ -26,24 +20,12 @@ h1{
   line-height:5.5rem;}
 h2{
   font-weight: 700;}
-h4{
-  border: 0.12rem solid $primary-color;
-  border-radius: 3%;
-  max-width: 8em;
-  padding: 0.5em;
-  margin: 0 auto;
-  font-weight: 700;
-  font-size: 1.8rem;}
 p{font-size: 1.1rem}
 /*
   HTML Elements
 */
 body{
   background: $primary-backg;}
-section{
-  height: 100%;
-  width: 100%;
-  z-index: 10;}
 hr{
   width: 50%;
   border-color: #fff;
@@ -58,28 +40,6 @@ article{
 /*
   Theme Classes
 */
-.logo{z-index: 1000;}
-.logo > *{
-    font-family: $primary-heading;
-    font-weight:700;
-    position: fixed;
-    left: 0.9em;
-    top: 0.6em;
-    border-bottom: 0.125em solid $primary-color;
-    border-top: 0.125em solid $primary-color;}
-.port-col{
-  height: 100%;
-  background: $primary-backg;}
-.is-hover{
-  background: $primary-color;
-  h4,a{color: #eee;border: none;}
-  h4:hover{text-decoration: line-through;}
-  -webkit-transition: all 1.6s ease;
-  -moz-transition: all 1.6s ease;
-  -ms-transition: all 1.6s ease;
-  -o-transition: all 1.6s ease;
-  transition: all 1.6s ease;}
-
 #titles{margin: 12em 0 6rem 0}
 #titles > * {padding: 0.03em}
 #blog{border: 0.6rem solid #fff;padding: 3% 10%;}
@@ -92,17 +52,4 @@ article{
     margin: 1em 1em 1em 0;
   }
   img:hover{opacity: 1;}
-}
-/*
-  Mixins
-*/
-%vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);}
-.port-col > * {
-  @extend %vertical-align;
-  a{max-width: 100%;}
 }
