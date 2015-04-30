@@ -1,32 +1,22 @@
 /*
   Resusable Vars
 */
-$primary-color:#D64541;
-$primary-body: 'Lato','Futura','Open Sans Condensed',sans-serif;
-$primary-backg:#14192c;
+
+
+
 /*
   Typography
 */
-h1{background: red;}
-h1,h3,h4{color: $primary-color;}
-h2,h3,p{font-family: $primary-body;}
-h2,p{color: #fff;}
+
 a,a:hover{color: inherit;font-family: inherit;}
 a:active{color: inherit;}
 a:focus{color: inherit;}
-h1{
-  font-family: 'Open Sans Condensed';
-  font-weight:900;
-  font-size:6.5rem;
-  line-height:5.5rem;}
-h2{
-  font-weight: 700;}
-p{font-size: 1.1rem}
+
 /*
   HTML Elements
 */
 body{
-  background: $primary-backg;}
+  background:#242424;}
 hr{
   width: 50%;
   border-color: #fff;
@@ -41,16 +31,3 @@ article{
 /*
   Theme Classes
 */
-#titles{margin: 12em 0 6rem 0}
-#titles > * {padding: 0.03em}
-#blog{border: 0.6rem solid #fff;padding: 3% 10%;}
-.social-icons{
-  margin: 2em 0em;
-  img{
-    width: 5rem;
-    height: 5rem;
-    opacity: 0.8;
-    margin: 1em 1em 1em 0;
-  }
-  img:hover{opacity: 1;}
-}

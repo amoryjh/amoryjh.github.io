@@ -1,115 +1,21 @@
-/*
-  Resusable Vars
+/* Resusable Vars
 */
-/*
-  Typography
+/* Typography
 */
-/* line 10, ../scss/app.scss */
-h1, h3, h4 {
-  color: #d64541;
-}
+a, a:hover { color: inherit; font-family: inherit; }
 
-/* line 11, ../scss/app.scss */
-h2, h3, p {
-  font-family: "Lato", "Futura", "Open Sans Condensed", sans-serif;
-}
+a:active { color: inherit; }
 
-/* line 12, ../scss/app.scss */
-h2, p {
-  color: #fff;
-}
+a:focus { color: inherit; }
 
-/* line 13, ../scss/app.scss */
-a, a:hover {
-  color: inherit;
-  font-family: inherit;
-}
-
-/* line 14, ../scss/app.scss */
-a:active {
-  color: inherit;
-}
-
-/* line 15, ../scss/app.scss */
-a:focus {
-  color: inherit;
-}
-
-/* line 16, ../scss/app.scss */
-h1 {
-  font-family: 'Open Sans Condensed';
-  font-weight: 900;
-  font-size: 6.5rem;
-  line-height: 5.5rem;
-}
-
-/* line 21, ../scss/app.scss */
-h2 {
-  font-weight: 700;
-}
-
-/* line 23, ../scss/app.scss */
-p {
-  font-size: 1.1rem;
-}
-
-/*
-  HTML Elements
+/* HTML Elements
 */
-/* line 27, ../scss/app.scss */
-body {
-  background: #14192c;
-}
+body { background: #242424; }
 
-/* line 29, ../scss/app.scss */
-hr {
-  width: 50%;
-  border-color: #fff;
-  margin: 0 auto;
-  padding: 0.1em;
-}
+hr { width: 50%; border-color: #fff; margin: 0 auto; padding: 0.1em; }
 
-/* line 34, ../scss/app.scss */
-article {
-  padding: 2em 0em;
-}
-/* line 36, ../scss/app.scss */
-article hr {
-  width: 8em;
-  margin: 0;
-}
+article { padding: 2em 0em; }
+article hr { width: 8em; margin: 0; }
 
-/*
-  Theme Classes
+/* Theme Classes
 */
-/* line 43, ../scss/app.scss */
-#titles {
-  margin: 12em 0 6rem 0;
-}
-
-/* line 44, ../scss/app.scss */
-#titles > * {
-  padding: 0.03em;
-}
-
-/* line 45, ../scss/app.scss */
-#blog {
-  border: 0.6rem solid #fff;
-  padding: 3% 10%;
-}
-
-/* line 46, ../scss/app.scss */
-.social-icons {
-  margin: 2em 0em;
-}
-/* line 48, ../scss/app.scss */
-.social-icons img {
-  width: 5rem;
-  height: 5rem;
-  opacity: 0.8;
-  margin: 1em 1em 1em 0;
-}
-/* line 54, ../scss/app.scss */
-.social-icons img:hover {
-  opacity: 1;
-}
