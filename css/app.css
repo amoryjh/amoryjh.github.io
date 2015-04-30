@@ -1,5 +1,7 @@
 /* Resusable Vars
 */
+.container { width: 40em; margin: 0 auto; }
+
 /* Typography
 */
 a, a:hover { color: inherit; font-family: inherit; }
@@ -10,14 +12,18 @@ a:focus { color: inherit; }
 
 /* HTML Elements
 */
-body { background: #242424; color: #dbdbdb; font-family: 'Nunito','Futura', sans-serif; }
+body { background: #242424; color: #dbdbdb; font-family: 'Nunito', sans-serif; text-align: right; }
 
-h1 { top: 5em; text-align: center; }
+header { margin: 5em 0; }
+
+h1 { font-family: 'Josefin Sans'; text-align: center; }
 
 hr { width: 50%; border-color: #fff; margin: 0 auto; padding: 0.1em; }
 
 article { padding: 2em 0em; }
 article hr { width: 8em; margin: 0; }
+
+ul { list-style-type: none; }
 
 /* Theme Classes
 */
