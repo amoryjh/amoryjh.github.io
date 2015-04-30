@@ -11,10 +11,8 @@
   Typography
 */
 
-a,a:hover{color: inherit;font-family: inherit;}
-a:active{color: inherit;}
-a:focus{color: inherit;}
-
+a,a:hover,a:active,a:focus{color: inherit;font-family: inherit;}
+a:hover{color: #fff;}
 /*
   HTML Elements
 */
@@ -22,27 +20,16 @@ body{
   background:#242424;
   color: #dbdbdb;
   font-family: 'Nunito', sans-serif;
-  text-align: right;
+  text-align: center;
 }
 header{
-  margin: 5em 0;
+  margin: 10em 0;
 }
 h1{
   font-family: 'Josefin Sans';
-  text-align: center;
 }
-hr{
-  width: 50%;
-  border-color: #fff;
-  margin: 0 auto;
-  padding: 0.1em;}
-article{
-  padding: 2em 0em;
-  hr{
-    width: 8em;
-    margin: 0;}
-}
-ul{list-style-type: none}
+ul{list-style-type: none;margin: 0 auto;padding:0;background: mediumvioletred}
+li{display: inline-block;margin: 1.1em;padding:0;}
 /*
   Theme Classes
 */
