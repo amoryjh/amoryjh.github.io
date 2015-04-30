@@ -14,7 +14,7 @@ body { background: #242424; color: #dbdbdb; font-family: 'Nunito', sans-serif; t
 
 header { margin: 10em 0; }
 
-h1 { font-family: 'Josefin Sans'; }
+h1, h2, h3 { font-family: 'Josefin Sans'; }
 
 ul { list-style-type: none; margin: 0 auto; padding: 0; background: mediumvioletred; }
 
