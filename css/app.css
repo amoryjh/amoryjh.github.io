@@ -1,6 +1,6 @@
 /* Resusable Vars
 */
-.container { width: 40em; margin: 0 auto; }
+.container { width: 90%; max-width: 40em; margin: 0 auto; }
 
 /* Typography
 */
