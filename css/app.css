@@ -10,7 +10,7 @@ body{
 	text-align: center;
 }
 div{margin: 0 auto;}
-.bey,.bey2,.bey3{max-height: 25em;height: 100%;width: 28%;margin: 2.5% ;float: left;}
+.bey,.bey2,.bey3{max-height: 25em;height: 100%;width: 28%;max-width:30em;margin: 2.5% ;float: left;}
 .bey{background: url('../tru.gif') no-repeat center center; background-size: cover  }
 .bey2{background:url('../bey.gif') no-repeat center center; background-size: cover }
 .bey3{background:url('../woke.gif') no-repeat center center; background-size: cover}
