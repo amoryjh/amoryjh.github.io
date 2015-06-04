@@ -1,19 +1,24 @@
-h1,h2,a,p{font-family:'Josefin Sans';font-weight: 300; line-height: 1.5; margin: 0 auto;}
-h1{font-family:Arial,'Josefin Sans',sans-serif;font-size: 3rem; font-weight: 400;}
-h2{font-size: 2em}
-a{color:#efefef;text-decoration: underline;font-size: 1.4em;padding:1em;}
-a:hover{color: #fff;}
+h1,h2,a,p{font-family:'Josefin Sans';font-weight: 300; line-height: 1.3; margin: 0 auto;font-size: 20px}
+h1{font-family:'Josefin Sans',sans-serif;font-size: 1.8rem; font-weight: 400;}
+h2{background-color:#FF9940;margin-top: 9em;font-size: 2.1rem}
+h4{font-family: Arial,Futura;font-size: 3rem;font-weight: 400}
+a{color:#efefef;text-decoration: underline;font-size: 1.1em;padding:1em 0;opacity: 0.9}
+h1 a{color: #FF9940;font-size: 1em}
+a:hover{color: #fff;opacity: 1}
 body{
-	background: #fdfdfd; 
+	background: #212322; 
 	color: #cbcbcb; 
 	font-weight: 300; 
 	text-align: center;
 }
-div{margin: 0 auto;}
-.bey,.bey2,.bey3{max-height: 25em;height: 100%;width: 28%;margin: 2.5% ;float: left;}
+.row{width: 100%;display: inline-block;margin-top: 1em}
+.tru{float: none;}
+.bey,.bey2,.bey3{min-height: 18em;height: 100%;width: 28%;margin: 2.5% ;float: left;}
 .bey{background: url('../tru.gif') no-repeat center center; background-size: cover  }
 .bey2{background:url('../bey.gif') no-repeat center center; background-size: cover }
 .bey3{background:url('../woke.gif') no-repeat center center; background-size: cover}
 @media(max-width: 600px){
-	.bey,.bey2,.bey3{width: 95%;margin: 2em auto;float: none;}
+	body{font-size: 14px}
+	.row{margin-top: 0em;padding: 0;display: block;}
+	.bey,.bey2,.bey3{width: 95%;margin: 2em auto;}
 }
