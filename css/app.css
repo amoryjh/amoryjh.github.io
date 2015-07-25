@@ -24,45 +24,37 @@ sup{font-size: 18px}
       -ms-transform:skew(3deg,13deg);
           transform:skew(3deg,13deg);
 }
-.bey:hover{
-  -webkit-transform:skew(-2deg,-8deg);
-      -ms-transform:skew(-2deg,-8deg);
-          transform:skew(-2deg,-8deg);
-}
 .bey2{
   background:url('../bey.gif') no-repeat center center; 
   background-size: cover;
-  -webkit-transform:skew(20deg,4deg);
-      -ms-transform:skew(20deg,4deg);
-          transform:skew(20deg,4deg);
-}
-.bey2:hover{
-  -webkit-transform:skew(-5deg,-5deg);
-      -ms-transform:skew(-5deg,-5deg);
-          transform:skew(-5deg,-5deg);
+  -webkit-transform:skew(-6deg,-6deg);
+      -ms-transform:skew(-6deg,-6deg);
+      transform:skew(-6deg,-6deg);
 }
 .bey3{
   background:url('../woke.gif') no-repeat center center; 
   background-size: cover;
   -webkit-transform:skew(-2deg,-9deg);
       -ms-transform:skew(-2deg,-9deg);
-          transform:skew(-2deg,-9deg);
+      transform:skew(-2deg,-9deg);    
 }
-.bey3:hover{
-  -webkit-transform:skew(20deg,11deg);
-      -ms-transform:skew(20deg,11deg);
-          transform:skew(20deg,11deg);
+.name{
+    margin: 0em 0 5em 0;
+    -webkit-transform:skew(4deg,5deg);
+    -ms-transform:skew(4deg,5deg);
+    transform:skew(4deg,5deg);
 }
-
-.name{margin: 0em 0 8em 0;-webkit-transform:skew(-1deg,8deg);-ms-transform:skew(-1deg,8deg);transform:skew(-1deg,8deg)}
 h1.shadows {
-  font-size: 12em;
-  color: #2efef2;
-  letter-spacing: 0.45em;
-  font-weight: 100;
-  background: rgba(255,153,64,1);
-  border:100px solid #fafafa;
-  text-shadow: 
+    font-size: 6em;
+    transform:skew(-1deg,8deg);
+    color: #2efef2;
+    letter-spacing: 0.45em;
+    padding-bottom:50px;
+    font-weight: 100;
+    background: rgba(255,153,64,1);
+    border:10px solid #fafafa;
+    border-right:none; border-left:none;
+    text-shadow: 
              -1px 2px 1px #FF9940, 
              -2px 4px 1px #FC973F, 
              -3px 6px 1px #FA963F,  
@@ -94,19 +86,14 @@ h1.shadows {
            -29px 58px 1px #B0692C,
            -30px 60px 1px #AD672B;
 }
-@media(max-width: 1110px){
-  h1.shadows{font-size: 10em;letter-spacing: 0.3}
-}
 @media(max-width: 780px){
   body{
     font-size: 12px;
   }
   
   h1.shadows {
-    font-size: 8em;
-    color: #2efef2;
-    letter-spacing: .2em;
-    border:none;
+      letter-spacing: .2em;
+      margin-left:-30px;
     text-shadow: 
                -1px 2px 1px #FF9940, 
                -2px 4px 1px #FC973F, 
@@ -124,7 +111,3 @@ h1.shadows {
   .row{margin-top: 0.5em;padding: 0.5em;display: block;}
   .bey,.bey2,.bey3{width: 95%;margin: 2em auto;}
 }
-
-
-
-
