@@ -1,113 +1,15 @@
 body{
-  font-size: 16px;
-  background:#313232;
+  font-size: 13px;
+  background:#fff;
   color: #cbcbcb; 
-  font-weight: 300; 
   text-align: center;
-  border:none;
+  font-family: 'PT Mono';
+  word-spacing: -3px
 }
-
-h1,h2,a,p{font-family:'Josefin Sans';font-weight: 300; line-height: 1.3; margin: 0 auto;}
-h1{font-family:'Josefin Sans',sans-serif;font-size: 1.8em; font-weight: 400;}
-h2{background-color:#FF9940;margin-top: 8em;font-size: 2.4em}
-a{color:#efefef;text-decoration: underline;font-size: 1.1em;padding:1em 0;opacity: 0.9}
-h1 a{color: #FF9940;font-size: 1em;}
-a:hover{color: #fff;opacity: 1}
-sup{font-size: 18px}
-.row{width: 100%;display: inline-block;margin-top: 1em;z-index: 100}
-.tru{float: none;}
-.bey,.bey2,.bey3{min-height: 18em;height: 100%;width: 28%;margin: 2.5% ;float: left;}
-.bey{
-  background: url('../tru.gif') no-repeat center center;
-  background-size: cover;
-  -webkit-transform:skew(3deg,13deg);
-      -ms-transform:skew(3deg,13deg);
-          transform:skew(3deg,13deg);
-}
-.bey2{
-  background:url('../bey.gif') no-repeat center center; 
-  background-size: cover;
-  -webkit-transform:skew(-6deg,-6deg);
-      -ms-transform:skew(-6deg,-6deg);
-      transform:skew(-6deg,-6deg);
-}
-.bey3{
-  background:url('../woke.gif') no-repeat center center; 
-  background-size: cover;
-  -webkit-transform:skew(-2deg,-9deg);
-      -ms-transform:skew(-2deg,-9deg);
-      transform:skew(-2deg,-9deg);    
-}
-.name{
-    margin: 0em 0 5em 0;
-    -webkit-transform:skew(4deg,5deg);
-    -ms-transform:skew(4deg,5deg);
-    transform:skew(4deg,5deg);
-}
-h1.shadows {
-    font-size: 6em;
-    transform:skew(-1deg,8deg);
-    color: #2efef2;
-    letter-spacing: 0.45em;
-    padding-bottom:50px;
-    font-weight: 100;
-    background: rgba(255,153,64,1);
-    border:10px solid #fafafa;
-    border-right:none; border-left:none;
-    text-shadow: 
-             -1px 2px 1px #FF9940, 
-             -2px 4px 1px #FC973F, 
-             -3px 6px 1px #FA963F,  
-             -4px 8px 1px #F7943E,  
-            -5px 10px 1px #F5933D,  
-            -6px 12px 1px #F2913D,  
-            -7px 14px 1px #F0903C, 
-            -8px 16px 1px #ED8E3C,  
-            -9px 18px 1px #EB8D3B,  
-           -10px 20px 1px #E88B3A, 
-           -11px 22px 1px #E58A3A,  
-           -12px 24px 1px #E38839,  
-           -13px 26px 1px #E08738,  
-           -14px 28px 1px #DE8538,  
-           -15px 30px 1px #DB8437,  
-           -16px 32px 1px #D98236,  
-           -17px 34px 1px #D68136,  
-           -18px 36px 1px #D47F35,  
-           -19px 38px 1px #D17D34, 
-           -20px 40px 1px #CF7C33,  
-           -21px 42px 1px #CC7A33,  
-           -22px 44px 1px #C97832, 
-           -23px 46px 1px #C77731,  
-           -24px 48px 1px #C47531,  
-           -25px 50px 1px #C27430,  
-           -26px 52px 1px #BF7230,  
-           -27px 54px 1px #BD712F, 
-           -28px 56px 1px #BA6F2E,
-           -29px 58px 1px #B0692C,
-           -30px 60px 1px #AD672B;
-}
-@media(max-width: 780px){
-  body{
-    font-size: 12px;
-  }
-  
-  h1.shadows {
-      letter-spacing: .2em;
-      margin-left:-30px;
-    text-shadow: 
-               -1px 2px 1px #FF9940, 
-               -2px 4px 1px #FC973F, 
-               -3px 6px 1px #FA963F,  
-               -4px 8px 1px #F7943E,  
-              -5px 10px 1px #F5933D,  
-              -6px 12px 1px #F2913D,  
-              -7px 14px 1px #F0903C, 
-              -8px 16px 1px #ED8E3C,  
-              -9px 18px 1px #EB8D3B,
-             -10px 20px 1px #E88B3A, 
-             -11px 22px 1px #E58A3A,  
-             -12px 24px 1px #E38839; 
-  }
-  .row{margin-top: 0.5em;padding: 0.5em;display: block;}
-  .bey,.bey2,.bey3{width: 95%;margin: 2em auto;}
-}
+h1,a,p{line-height: 1.3; margin: 0 auto;}
+p a{color: #FF9940;font-size: 1.1em;}
+p a:hover,.links p a:hover{text-decoration: underline;color: #F09110;}
+.main{position: relative;top: 45%;transform:translateY(-50%);}
+.links p{display: inline-block;margin: 1em 2em;}
+.links p a{color: #19B5FE}
+.name{margin: 0.75em;font-size: 2em;color: #000}
