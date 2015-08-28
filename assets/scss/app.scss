@@ -11,7 +11,7 @@ body{
 .center{position: relative; top: 40%;
   transform: translateY(-40%); text-align: center;}
 h1{font-size: 4em;line-height: 1; letter-spacing: -7px; color: #faeefa;margin: 0;}
-h2{color: #DADFE1;font-size:1em;margin: 1em 0;}
+h2{color: #DADFE1;font-size:1em;margin: 1em 0;font-family: 'lineto-circular-medium'}
 a{color:#eedeee;font-size: 1em;margin: 0.1em 1em;padding-top: 0;
   &:hover{color: darken(#eedeee,15%);text-decoration: line-through;}
 }
