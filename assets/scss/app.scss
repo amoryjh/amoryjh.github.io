@@ -1,17 +1,32 @@
 @import 'typography';
 @import 'colors';
-//@import 'menu';
+@import 'menu';
 
 /* ==========================================================================
 Global
 ========================================================================== */
 body{
-  background-color: #fbfbfe;
+  background-color: #e2e1e4;
+  color: #211f00;
 }
-.center{position: relative; top: 40%;
-  transform: translateY(-40%); text-align: center;}
-h1{font-size: 4em;line-height: 1; letter-spacing: -7px; color: #faeefa;margin: 0;}
-h2{color: #DADFE1;font-size:1em;margin: 1em 0;font-family: 'lineto-circular-medium'}
-a{color:#eedeee;font-size: 1em;margin: 0.1em 1em;padding-top: 0;
-  &:hover{color: darken(#eedeee,15%);text-decoration: line-through;}
+a{text-decoration: none;color: inherit;&:hover{text-decoration: line-through;}}
+#listy{
+  text-align: left;
+  position: relative;
+  li{
+    letter-spacing: -1px;margin: 1rem 0; font-size: 2.9em;
+    a{transition:2s all;text-decoration: none;color:#2e2e2e;&:hover{text-decoration: line-through;}}
+  }
+} 
+.intro{
+  position: relative;
+  padding-top: 6em;
+  .home-list{
+    margin-bottom: 4em;
+  }
+  #listy{
+    padding: 0 5%;
+    @media screen and (min-width:700px){max-width: 27em; margin: 0 auto;}
+    p>a{color: #FF9940;}
+  }
 }
