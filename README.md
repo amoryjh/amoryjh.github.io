@@ -1,3 +1,4 @@
 # Personal-Site
-Portfolio items & stuff
+Portfolio items & stuff.
+
 [Site](http://joshhanson.me/)
