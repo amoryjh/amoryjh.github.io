@@ -750,15 +750,27 @@ a:hover {
   position: relative;
 }
 
+#listy p {
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  #listy p {
+    text-align: left;
+  }
+}
+
 #listy li {
   letter-spacing: -1px;
   margin: 1rem 0;
   font-size: 2.1em;
+  padding-left: 15px;
 }
 
 @media (min-width: 500px) {
   #listy li {
     font-size: 2.9em;
+    padding-left: 0;
   }
 }
 
