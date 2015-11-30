@@ -775,7 +775,7 @@ a:hover {
 }
 
 #listy li a {
-  transition: 2s all;
+  transition: none;
   text-decoration: none;
   color: #2e2e2e;
 }
