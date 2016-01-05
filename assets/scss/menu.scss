@@ -12,18 +12,21 @@
   position: absolute; 
   top: 0;left: 0; z-index: 1;
   background-color: lighten(#e2e1e9,6%);
+  transition:all 0.6s ease-in-out;
   display: none;
   clear: both;
   ul{
+    //font-family: 'Libre Baskerville', serif;
     position: relative; top: 45%; transform:translateY(-50%); 
     text-align: center; letter-spacing: 3px;
     h1{letter-spacing: -2px;}
     li{
       font-size: 3.4em;font-family: 'Abril Fatface', cursive;
-      display: inline-block;margin: 0.5em; a:hover{text-decoration: line-through;}
+      display: inline-block;margin: 0.5em;a:hover{text-decoration: line-through;}
     }
   }
 }
+
 .burger-icon {
   position: absolute;
   margin:2em;
