@@ -6,8 +6,9 @@
 Global
 ========================================================================== */
 body{
-  background-color: #f7f7f7;
+  background-color: #fafaff;
   color: #211f00;
+  @media screen and (min-width:800px){letter-spacing: -2px;}
 }
 .main{
   position: relative;
@@ -19,11 +20,24 @@ a{text-decoration: none;color: inherit;&:hover{text-decoration: line-through;}}
 .listy{
   text-align: left;
   position: relative;
-  margin: 3em 0;
+  margin: 0 0 3em;
   p{text-align: left;@media(min-width: 500px){text-align:left}}
   p>a{color: $brand-color;}
   li{
-    letter-spacing: -1px;margin: 1rem 0; font-size: 1.5em; @media(min-width: 500px){font-size: 1.8em;padding-left: 0;}
-    a{transition:none;text-decoration: none;color:#2e2e2e;&:hover{text-decoration: line-through;}}
+    letter-spacing: -1px;margin: 1rem 0; @media(min-width: 500px){padding-left: 0;}
+    a{transition:none;text-decoration: none;color:$brand-color;&:hover{text-decoration: line-through;}}
+  }
+}
+.soc{ 
+  float: left;width: 100%;text-align: center;
+  p{
+    text-align: center; margin: 1em 0;
+    a{padding: 2em;}
+  }
+}
+.halfsies{
+  width: 100%; margin: 0 auto;
+  @media screen and (min-width:800px){
+    width: 40%; margin: 5%; float: left;
   }
 }
