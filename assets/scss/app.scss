@@ -29,11 +29,11 @@ a{text-decoration: none;color: inherit;&:hover{text-decoration: line-through;}}
   }
 }
 .soc{ 
-  float: left;width: 100%;text-align: center;
+  float: left;width: 100%;text-align: left; @media(min-width: 400px){text-align: center;}
   p{
-    margin: 1em 0;
+    margin: 1em 0; text-align: left;
     a{
-      padding: 0.2em; text-align: left; @media(min-width: 400px){padding: 2em;text-align: center;}
+      padding: 0.2em; @media(min-width: 400px){padding: 2em;}
     }
   }
 }
