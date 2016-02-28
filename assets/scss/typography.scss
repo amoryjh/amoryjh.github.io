@@ -1,38 +1,5 @@
 $base-font: 14px;
 @font-face {
-  font-family: 'League Spartan';
-  src: url('/assets/fonts/leaguespartan/leaguespartan-bold.eot');
-  src: url('/assets/fonts/leaguespartan/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/leaguespartan/leaguespartan-bold.woff2') format('woff2'),
-       url('/assets/fonts/leaguespartan/leaguespartan-bold.woff') format('woff'),
-       url('/assets/fonts/leaguespartan/leaguespartan-bold.ttf') format('truetype'),
-       url('/assets/fonts/leaguespartan/leaguespartan-bold.svg#league_spartanbold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'AvenirNext-Demi';
-  src: url('/assets/fonts/Avenir/demi/AvenirNextLTPro-Demi.eot');
-  src: url('/assets/fonts/Avenir/demi/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/Avenir/demi/AvenirNextLTPro-Demi.woff2') format('woff2'),
-       url('/assets/fonts/Avenir/demi/AvenirNextLTPro-Demi.woff') format('woff'),
-       url('/assets/fonts/Avenir/demi/AvenirNextLTPro-Demi.ttf') format('truetype'),
-       url('/assets/fonts/Avenir/demi/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'AvenirNext-Medium';
-  src: url('/assets/fonts/Avenir/medium/AvenirNextLTPro-Medium.eot');
-  src: url('/assets/fonts/Avenir/medium/AvenirNextLTPro-Medium.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/Avenir/medium/AvenirNextLTPro-Medium.woff2') format('woff2'),
-       url('/assets/fonts/Avenir/medium/AvenirNextLTPro-Medium.woff') format('woff'),
-       url('/assets/fonts/Avenir/medium/AvenirNextLTPro-Medium.ttf') format('truetype'),
-       url('/assets/fonts/Avenir/medium/AvenirNextLTPro-Medium.svg#AvenirNextLTPro-Medium') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: 'AvenirNext-Regular';
   src: url('/assets/fonts/Avenir/regular/AvenirNextLTPro-Regular.eot');
   src: url('/assets/fonts/Avenir/regular/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
@@ -53,7 +20,6 @@ body{
   @media (min-width:1350px){font-size:$base-font + 6px;}
   color: $black;
 }
-
 h1{font-size: 3em; color: $brand-color;font-weight: 300;margin-bottom: 0.5em;}
 h2{font-size: 2.165em; color: $brand-color;font-weight: 300}
 a{color: $black;transition:0.4s all ease-in;&:hover{color: $brand-color}}
