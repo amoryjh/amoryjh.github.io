@@ -1,45 +1,86 @@
-@import 'typography';
 @import 'colors';
+@import 'typography';
 @import 'menu';
+
+.emoji{
+  font-weight: normal;
+  font-family: "Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";
+}
 
 /* ==========================================================================
 Global
 ========================================================================== */
 body{
-  background-color: #fafaff;
-  color: #211f00;
-  @media screen and (min-width:800px){letter-spacing: -2px;}
+  padding: 1em;
+  img{max-width: 100%;}
+  h2{margin-bottom: 0.25em}
 }
-.main{
-  position: relative;
-  padding: 0 5%;
-  padding-top: 0;
-  @media screen and (min-width:700px){max-width: 100%; margin: 0 auto;}
-}
-a{text-decoration: none;color: inherit;&:hover{text-decoration: line-through;}}
-.listy{
-  text-align: left;
-  position: relative;
-  margin: 0 0 3em;
-  p{text-align: left;@media(min-width: 500px){text-align:left}}
-  p>a{color: $brand-color;}
-  li{
-    margin: 1rem 0; @media(min-width: 500px){padding-left: 0;}
-    a{transition:none;text-decoration: none;color:$brand-color;&:hover{text-decoration: line-through;}}
+nav{
+  width: 90%; margin: 0 auto;
+  #name{ color: $brand-color; }
+  .soc{
+    width: 70%; float: right;text-align: right;
+    span{margin: 0 1em; a{text-decoration: none;}}
   }
 }
-.soc{ 
-  float: left;width: 100%;
-  p{
-    margin: 1em 0; text-align: left; @media(min-width: 400px){text-align: center;}
-    a{
-      padding: 0.2em; @media(min-width: 400px){padding: 2em;}
+
+main{
+  width: 94%; 
+  margin: 0 auto; margin-top:10em;
+  section{ margin: 3em auto; }
+
+  section.hi{
+    max-width: 40em;
+    p{max-width: 40em;line-height: 1.8rem;margin: 0.5em auto}
+    p a{padding: 0.15em 0.2em;background: rgba(249, 191, 59,0.3)}
+  }
+
+  section.work{
+    margin-top: 7em;
+    text-align: center;
+    h1{color:$black;margin-bottom: 0.5em}
+    ul{width: 100%;}
+    li{
+      position: relative;
+      display: inline-block; width: 48%; 
+      margin: 1% 0.35%;
+      background: lavender;
+      &:hover{
+        img{opacity: 0.25;}
+        a{
+          color: $black; 
+          span{background: $brand-color;color:#fff;opacity: 1;}
+        }
+      }
+      /*a {
+        z-index: 99;font-weight: 700;
+        text-decoration: none;
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 50%; 
+        transform: translateY(-50%);
+      }*/
+      span {
+        z-index: 99; font-size: 1.5em; letter-spacing: -0.05em; 
+        font-weight: 300;
+        font-family: Helvetica, Arial, Futura, sans-serif;
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 50%;  opacity: 0;
+        transform: translateY(-50%);
+        color: lighten($black,10%);transition:0.5s all ease-in;
+      }
+      img{opacity: 0.8;transition:0.4s all ease-in;}
     }
+
   }
 }
-.halfsies{
-  width: 100%; margin: 0 auto;
-  @media screen and (min-width:800px){
-    width: 40%; margin: 5%; float: left;
-  }
+footer{
+  text-align: center;
+  margin: 5em auto;
+  color: #767676;
 }
