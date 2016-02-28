@@ -23,60 +23,28 @@ nav{
     span{margin: 0 0.25em; @media(min-width: 420px){margin: 0 1em;} a{text-decoration: none;}}
   }
 }
-
 main{
   width: 94%; 
   margin: 0 auto; margin-top:10em;
   section{ margin: 3em auto; }
-
   section.hi{
     max-width: 40em;
     p{max-width: 40em;line-height: 1.8rem;margin: 0.5em auto}
     p a{padding: 0em 0.2em;background: rgba(249, 191, 59,0.3)}
   }
-
   section.work{
     margin-top: 7em;
     text-align: center;
-    h1{color:$black;margin-bottom: 0.5em}
-    ul{width: 100%;}
+    //ul{width: 100%;}
     li{
       position: relative;
       display: inline-block; width: 48%; 
       margin: 1% 0.35%;
-      background: lavender;
       &:hover{
-        img{opacity: 0.25;}
-        a{
-          color: $black; 
-          span{background: $brand-color;color:#fff;opacity: 1;}
-        }
-      }
-      /*a {
-        z-index: 99;font-weight: 700;
-        text-decoration: none;
-        position: absolute;
-        text-align: center;
-        left: 0;
-        right: 0;
-        top: 50%; 
-        transform: translateY(-50%);
-      }*/
-      span {
-        z-index: 99; font-size: 1.5em; letter-spacing: -0.05em; 
-        font-weight: 300;
-        font-family: Helvetica, Arial, Futura, sans-serif;
-        position: absolute;
-        text-align: center;
-        left: 0;
-        right: 0;
-        top: 50%;  opacity: 0;
-        transform: translateY(-50%);
-        color: lighten($black,10%);transition:0.5s all ease-in;
+        img{opacity: 1;}
       }
       img{opacity: 0.8;transition:0.4s all ease-in;}
     }
-
   }
 }
 footer{
