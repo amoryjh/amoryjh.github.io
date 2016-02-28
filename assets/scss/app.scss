@@ -16,10 +16,10 @@ body{
   h2{margin-bottom: 0.25em}
 }
 nav{
-  width: 90%; margin: 0 auto;
-  #name{ color: $brand-color; }
+  width: 94%; margin: 0 auto;
+  #name{ color: $brand-color; float: left;}
   .soc{
-    width: 70%; float: right;text-align: right;
+    float: right;text-align: right;
     span{margin: 0 1em; a{text-decoration: none;}}
   }
 }
