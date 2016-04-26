@@ -1,67 +1,53 @@
 @import '../css/reset';
-@import 'colors';
-@import 'typography';
-
+/* ==========================================================================
+Colors!
+========================================================================== */
+$brand-color:#db0a5b;
+$black: #343534;
+$blu: #00bcd4;
+/* ==========================================================================
+Typography
+========================================================================== */
+$base-font: 14px;
+body{
+  font-family: 'Roboto Mono', 'monospace', sans-serif;
+  font-size: $base-font;
+  font-weight: 300;
+  @media (min-width:680px){font-size:$base-font  + 1px;}
+  @media (min-width:992px){font-size:$base-font  + 2px;}
+  @media (min-width:1200px){font-size:$base-font + 4px;}
+  @media (min-width:1350px){font-size:$base-font + 6px;}
+  color: $black;
+}
+h1{font-size: 2.3rem; font-weight: 400;}
+h2{font-size: 1.846em;font-weight: 300; margin: 0.965em 0 1em; text-align: left;line-height: 1.65;}
+p{margin: 0 0 .6rem;}
+a{color: $brand-color;}
+/*
+====================Leave in case I use emojis again=================
 .emoji{
   font-weight: normal;
   font-family: "Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";
-}
-.valign {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
+}*/
 /* ==========================================================================
-Global
+Basic Stuff
 ========================================================================== */
 body{
-  padding: 1em 0;
-  img{max-width: 100%;}
-  h2{margin-bottom: 0.25em}
+  background: #fafafa; 
 }
-nav{
-  width: 92%; margin: 0 auto;
-  #name{ color: $brand-color; float: left;}
-  .soc{
-    float: right;text-align: right;
-    span{margin: 0 0.25em; @media(min-width: 420px){margin: 0 1em;} a{text-decoration: none;}}
-  }
+main{
+  margin: 0 auto; padding: 2em 1em;
+  max-width: 1200px; 
 }
-main{ 
-  margin: 0 auto;
-  section{ margin: 2em auto; }
-  section.hi{
-    margin-top: 8em;
-    max-width: 40em;
-    padding: 0 2em;
-    p{max-width: 40em;line-height: 1.8rem;margin: 0.5em auto}
-    p a{padding: 0em 0.2em;background: rgba(249, 191, 59,0.3)}
-  }
-  section.work{
-    h2{padding-bottom: 0.25em}
-    padding: 1em 1em;
-    margin-bottom: 0;
-    text-align: center;
-    li{
-      position: relative;
-      display: inline-block; 
-      width: 90%;
-      @media(min-width: 680px){width: 29%;}
-      margin: 1.5% 0.35%;
-    }
-  }
+section{
+  background: #fff; padding: 1.6em; border: 1px solid #eee;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
-footer{
-  text-align: center;
-  background: $brand-color;
-  margin: 0; padding: 2em 0;
-  p{position: relative;max-width: 10em;margin: 0 auto;a{color: #fff;text-decoration: none;&:hover{color: #eee;text-decoration: underline;}}}
-  .emoji{
-    position: absolute; animation:rotate 1s infinite linear;padding: 0;
-  }
-  color: #767676;
+.name{color:$brand-color;font-size: 1.62em;}
+p{font-weight: 400;}
+@media(min-width: 700px){
+  section{padding: 2.6em}
+  main{padding: 3em 5em;}
 }
-@keyframes rotate {
-    from{transform:rotate(0deg);}
-    to{transform:rotate(360deg);}
-}
+
+
