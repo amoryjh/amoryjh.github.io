@@ -10,14 +10,14 @@ Typography
 ========================================================================== */
 $base-font: 14px;
 body{
-  font-family: 'Roboto Mono', 'monospace', sans-serif;
-  font-size: $base-font;
-  font-weight: 300;
-  @media (min-width:680px){font-size:$base-font  + 1px;}
-  @media (min-width:992px){font-size:$base-font  + 2px;}
-  @media (min-width:1200px){font-size:$base-font + 4px;}
-  @media (min-width:1350px){font-size:$base-font + 6px;}
-  color: $black;
+font-family: 'Roboto Mono', 'monospace', sans-serif;
+font-size: $base-font;
+font-weight: 300;
+@media (min-width:680px){font-size:$base-font  + 1px;}
+@media (min-width:992px){font-size:$base-font  + 2px;}
+@media (min-width:1200px){font-size:$base-font + 4px;}
+@media (min-width:1350px){font-size:$base-font + 6px;}
+color: $black;
 }
 h1{font-size: 2.3rem; font-weight: 400;}
 h2{font-size: 1.846em;font-weight: 300; margin: 0.965em 0 1em; text-align: left;line-height: 1.65;}
@@ -26,28 +26,28 @@ a{color: $brand-color;}
 /*
 ====================Leave in case I use emojis again=================
 .emoji{
-  font-weight: normal;
-  font-family: "Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";
+font-weight: normal;
+font-family: "Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";
 }*/
 /* ==========================================================================
 Basic Stuff
 ========================================================================== */
 body{
-  background: #fafafa; 
+background: #fafafa; 
 }
 main{
-  margin: 0 auto; padding: 2em 1em;
-  max-width: 1200px; 
+margin: 0 auto; padding: 2em 1em;
+max-width: 1200px; 
 }
 section{
-  background: #fff; padding: 1.6em; border: 1px solid #eee;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+background: #fff; padding: 1.6em; border: 1px solid #eee;
+box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 .name{color:$brand-color;font-size: 1.62em;}
 p{font-weight: 400;}
 @media(min-width: 700px){
-  section{padding: 2.6em}
-  main{padding: 3em 5em;}
+section{padding: 2.6em}
+main{padding: 3em 5em;}
 }
 
 
