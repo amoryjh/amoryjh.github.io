@@ -49,10 +49,11 @@ body{
 section{
   height: 100%;
   background:#DB0A5B;
+  padding-top:4em;
 }
 .name{
   background: #fff;
-  padding: 4.5em 1.2em;
+  padding: 4.5em 1.6em;
   text-align:center;
   max-width: 800px;
   margin: 0 auto;
@@ -71,12 +72,12 @@ section{
     letter-spacing: 0.37em;
   }
   h2{
-    font-size: 2.24em;
+    font-size: 1.5em;
     @media(min-width:800px){
-      font-size:3em;
+      font-size:2.5em;
     }
     padding-top: 0.85em;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
 
   }
 }
