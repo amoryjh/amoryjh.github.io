@@ -11,7 +11,7 @@ Typography
 ========================================================================== */
 $base-font: 12px;
 body{
-font-family:'Open Sans', serif;
+font-family: "Comic Sans MS", "Comic Sans", cursive;
 font-size: $base-font;
 font-weight: 300;
 background:$black;
@@ -52,24 +52,18 @@ section{
 }
 .name{
   background: #fff;
-  padding: 4.5em 1.6em;
+  padding: 3.5em 0.5em;
   text-align:center;
   max-width: 800px;
   margin: 0 auto;
   width: 85%;
-  transform: matrix(1, -0.3, 0, 1, 0, 0);
+  animation: flipp 5s infinite;
+  box-shadow:
+    1px 3px 4px #1BBC9B,
+    2px 3px 4px #1BBC9B,
+    0px 4px 4px #1BBC9B;
   h1,h2{
-    font-family: 'Montserrat';
     font-weight: 700;
-  }
-  h1{
-    font-size: 3em;
-    text-transform: uppercase;
-    letter-spacing: 0.237em;
-    @media(min-width:800px){
-      font-size:5.86em;
-      letter-spacing: 0.37em;
-    }
   }
   h2{
     font-size: 1.3em;
@@ -79,7 +73,6 @@ section{
       letter-spacing: 0.3em;
     }
     padding-top: 0.85em;
-
   }
 }
 
@@ -97,6 +90,17 @@ p.soon{
   margin-top: 4em;
   font-weight: 700;
   font-size: 1.7em;
+}
+
+div.about{
+  text-align: center;
+  padding-top:2em
+}
+
+@keyframes flipp {
+    0%   {transform: matrix(1, 0, 0, 1, 0, 0);}
+    50%  {transform: matrix(1, -0.2, 0.6, 0.8, 0, 0);}
+    100% {transform: matrix(1, 0, 0, 1, 0, 0);}
 }
 
 
