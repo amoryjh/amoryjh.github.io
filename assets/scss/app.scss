@@ -2,105 +2,54 @@
 /* ==========================================================================
 Colors!
 ========================================================================== */
-//$brand-color:lighten(#db0a5b,25%);
-$brand-color:red;
-$black: #343234;
-$blu: #00bcd4;
-/* ==========================================================================
+$brand-color:#db0a5b;
+$black: #343534;
+$blu: #9A12B3;
+/* =========================================================================
 Typography
 ========================================================================== */
-$base-font: 12px;
+$base-font: 14px;
 body{
-font-family: "Comic Sans MS", "Comic Sans", Arial;
+font-family:'Roboto Mono', 'monospace', sans-serif;
 font-size: $base-font;
 font-weight: 300;
-background:$black;
-@media (min-width:680px){font-size:$base-font  + 2px;}
-@media (min-width:992px){font-size:$base-font  + 3px;}
+@media (min-width:680px){font-size:$base-font  + 1px;}
+@media (min-width:992px){font-size:$base-font  + 2px;}
 @media (min-width:1200px){font-size:$base-font + 4px;}
 @media (min-width:1350px){font-size:$base-font + 6px;}
 color: $black;
 }
-h1{font-size: 2.7em; font-weight: 400;}
-h2{font-size: 1.6em;}
-p{
-  font-size: 1.3em;
-  @media(min-width:600px){font-size: 1.5em;}
-  font-weight: 300; 
-  margin: 0.965em 0 1em; 
-  text-align: left;line-height: 1.65;
+h1{
+  color: $brand-color;
+  font-size: 2em;
+  font-weight: 100;
+  @media(min-width:600px){font-size:4em;}
 }
-a{color: $black}
+/*==========================================================================
+=======================Leave in case I use emojis again=====================
+============================================================================*/
+
+.emoji{font-weight: normal;font-family: "Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";}
 
 
-.emoji{
-font-weight: normal;
-font-family: "Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";
-}
-
-/* ==========================================================================
-Basic Stuff
+/* =========================================================================
+General
 ========================================================================== */
-body{
-  background:#000;
-  
-  //background:#c61400;
-}
-section{
-  height: 100%;
-  background:#DB0A5B;
-}
-.name{
-  background: #fff;
-  padding: 3.5em 0.5em;
-  text-align:center;
-  max-width: 800px;
-  margin: 0 auto;
-  width: 85%;
-  animation: flipp 5s infinite;
-  box-shadow:
-    1px 3px 4px #1BBC9B,
-    2px 3px 4px #1BBC9B,
-    0px 4px 4px #1BBC9B;
-  h1,h2{
-    font-weight: 700;
-  }
-  h2{
-    font-size: 1.3em;
-    letter-spacing: 0.23em;
-    @media(min-width:800px){
-      font-size:2.5em;
-      letter-spacing: 0.3em;
+.soon{
+  margin: 2em auto;text-align:center;  
+  a{text-decoration:none;color:$black;}
+  .wrk{
+    a{
+      display: inline-block; margin: 10px;
+      padding:8px; background:#fbf; 
+      &:hover{
+        background:lighten(#fbf,5%);
+        color: darken($black,5%);
+      }
     }
-    padding-top: 0.85em;
+  }
+  .em{
+    margin:2em auto;
+    a{font-weight:300; text-decoration:underline;}
   }
 }
-
-.links{
-  transform: rotate(90deg);
-  position: absolute;
-  top:8em;
-  left:-8.6em;
-  z-index: 999;
-  ul li{display:inline-block; padding: 1em;font-size:1.24em;}
-}
-p.soon{    
-  color: #fff;
-  text-align: center;
-  margin-top: 4em;
-  font-weight: 700;
-  font-size: 1.7em;
-}
-
-div.about{
-  text-align: center;
-  padding-top:2em
-}
-
-@keyframes flipp {
-    0%   {transform: matrix(1, 0, 0, 1, 0, 0);}
-    50%  {transform: matrix(1, -0.2, 0.6, 0.8, 0, 0);}
-    100% {transform: matrix(1, 0, 0, 1, 0, 0);}
-}
-
-
