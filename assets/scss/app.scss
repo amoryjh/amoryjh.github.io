@@ -5,6 +5,7 @@ Colors!
 $brand-color:#db0a5b;
 $black: #343534;
 $blu: #9A12B3;
+$pnk: #DB0A5B;
 /* =========================================================================
 Typography
 ========================================================================== */
@@ -44,29 +45,38 @@ h3{font-weight:300;}
 /* =========================================================================
 General
 ========================================================================== */
-.soon{
-  margin: 2em auto;text-align:center;  
-  a{text-decoration:none;color:$black;}
-  .wrk{
-    a{
-      display: inline-block; margin: 10px;
-      padding:8px; background:#fbf; 
-      &:hover{
-        background:lighten(#fbf,5%);
-        color: darken($black,5%);
-      }
-    }
+section.first {
+  height: 100vh;
+  background: linear-gradient(to right, lighten(#D2527F,1%), #5E3896);
+  color: #fff;
+  font-family: "Roboto Mono", monospace;
+  padding:0;
+  position: relative;
+  img{
+    max-width:300px;
+    position: absolute;top:0;
+    z-index:1;
+    opacity:0.7;
   }
-  h3{
-    max-width:45em; margin:0 auto; 
-    padding:1em 2em;
-    line-height: 1.8;
-    a{color:$brand-color;}
-    //text-align:;
+}
+.prompt {
+  z-index: 999; position: relative;
+  .emoji{font-size:2.8em;}
+  p{
+    font-size: 3em;
   }
-  .em{
-    margin:2em auto; 
-    padding:0 8px;
-    a{font-weight:300; text-decoration:underline;}
-  }
+}
+.output {
+  display:none;
+}
+.active:after {
+  content: '|';
+}
+.post-active:after{
+  content: '|';
+  animation: blink-c 1.3s infinite;
+}
+@keyframes blink-c {
+    0%   {opacity:1}
+    100% {opacity:0;}
 }
