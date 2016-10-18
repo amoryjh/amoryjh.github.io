@@ -16,12 +16,14 @@ var paths = {
 
  
 gulp.task('scripts', function() {
-  return gulp.src(paths.scripts)
-    .pipe(sourcemaps.init())
-    .pipe(uglify())
-    .pipe(concat('all.js'))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('build/js'));
+  return gulp.src([
+    './assets/js/main.js'
+    ])
+  .pipe(sourcemaps.init())
+  .pipe(uglify())
+  .pipe(concat('all.js'))
+  .pipe(sourcemaps.write('.'))
+  .pipe(gulp.dest('build/js'));
 });
 
 

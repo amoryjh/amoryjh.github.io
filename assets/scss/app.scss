@@ -1,70 +1,121 @@
 @import '../css/reset';
+//@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans';
 /* ==========================================================================
 Colors!
 ========================================================================== */
-$brand-color:#db0a5b;
-$black: #343534;
-$blu: #9A12B3;
+$brand-color:#d71920;
+$black:#1e1c1f;
+$txtblack: #343534;
+$blu: #00bcd4;
 $pnk: #DB0A5B;
 /* =========================================================================
 Typography
 ========================================================================== */
+//Emojis for da boyzzzzzzz
+.emoji{font-weight:400;font-family:"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Segoe UI Symbol","Android Emoji",EmojiSymbols}
 $base-font: 14px;
+html{
+  background-color:$black;
+}
 body{
-font-family:'Roboto Mono', 'monospace', sans-serif;
+font-family:'Roboto Mono', 'Helvetica', 'Open Sans', 'Arial', sans-serif;
 font-size: $base-font;
 font-weight: 300;
 @media (min-width:680px){font-size:$base-font  + 1px;}
 @media (min-width:992px){font-size:$base-font  + 2px;}
 @media (min-width:1200px){font-size:$base-font + 4px;}
 @media (min-width:1350px){font-size:$base-font + 6px;}
-color: $black;
+color: #fff;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family:'Roboto Mono', sans-serif;
 }
 h1{
-  color: $brand-color;
-  font-size: 2.2em;
-  font-weight: 100;
-  margin:0.1em auto;
-  @media(min-width:600px){font-size:4em;}
+  margin:0.49em 0;
+  font-size:2.5em; font-weight:700;
+  font-family: 'Roboto Mono';
+  @media(min-width:600px){font-size:5em;}
 }
 h2{
-  font-weight:300;
-  color: $brand-color;
-  font-size:1.6em;
-  margin:0.3em auto;
-  @media(min-width:600px){font-size:2.5em;}
+  font-family:'Roboto Mono',Helvetica,Arial,sans-serif;
+  font-style: italic;
+  margin-bottom:0.4em;
+  font-size: 1.2em;
+  @media(min-width:600px){font-size:1.6em;}
 }
-h3{font-weight:300;}
-/*==========================================================================
-=======================Leave in case I use emojis again=====================
-============================================================================*/
-
-.emoji{font-weight: normal;font-family: "Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";}
-
-
-/* =========================================================================
-General
-========================================================================== */
-section.first {
-  height: 100vh;
-  background: linear-gradient(to right, lighten(#D2527F,1%), #5E3896);
+h3{
+  margin-bottom:0.4em;
+  font-size: 1.4em;
+  @media(min-width:600px){font-size:2em;}
+}
+a {
   color: #fff;
-  font-family: "Roboto Mono", monospace;
-  padding:0;
-  position: relative;
-  img{
-    max-width:300px;
-    position: absolute;top:0;
-    z-index:1;
-    opacity:0.7;
+  //font-family: 'Roboto Mono', sans-serif;
+  transition: 0.3s;
+}
+p {
+  color: #fff;
+}
+/* =========================================================================
+Base Html
+========================================================================== */
+section{
+  padding:8em 0;
+}
+.text-center{
+  text-align: center;
+}
+/* =========================================================================
+Buttons
+========================================================================== */
+a.btn,button.btn{
+  margin: 8px 0;
+  //background:#6a3093;
+  background: #F62459;
+  border: none;
+  color:#fff;
+  font-size: 2em;
+  padding: .4em 0;
+  width: 80%;
+  max-width: 12em;
+  display: block;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  &:hover{
+    color: inherit;
+    background: lighten(#F62459,5%);
   }
 }
-.prompt {
-  z-index: 999; position: relative;
-  padding: 2em 1.28em;
-  .emoji{font-size:2.1em;}
+/* =========================================================================
+Flexxin Box
+========================================================================== */
+.inline-flex-box{
+  display: flex;
+  flex-flow: row wrap;
+} 
+.fl-box {
+  width: 31%;
+  margin:1%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  img {
+    width: 100%;
+  }
+}
+
+/* =========================================================================
+Printing Section
+========================================================================== */
+.prompt{
   p{
-    font-size: 2.3em; font-weight: 400
+    color:#fff;
+    text-align: center;
+    font-size: 2em;
   }
 }
 .output {
@@ -73,11 +124,58 @@ section.first {
 .active:after {
   content: '|';
 }
-.post-active:after{
+/*.post-active:last:after{
   content: '|';
   animation: blink-c 1.3s infinite;
+}*/
+.post-active:last-of-type{
+  &:after{
+    content: '|';
+    animation: blink-c 1.3s infinite;
+  }
 }
 @keyframes blink-c {
     0%   {opacity:1}
     100% {opacity:0;}
+}
+/* =========================================================================
+Siiiiickkkkkk bg
+========================================================================== */
+.blend-i{
+  //background: linear-gradient(to bottom right, #71ABE7, #A58FD1, #F0AE56);
+  background: linear-gradient(to right, #06A594, #62376E, #D27640);
+  //background: #232323;
+  position: relative;
+  padding: 0;
+  padding: 5em 1.3em 8em;
+  overflow: hidden;  
+}
+/* =========================================================================
+Name Section
+========================================================================== */
+.my-name-is{
+  h1{font-size: 2em;}
+  a{
+    padding: 0.5em;
+  }
+}
+/* =========================================================================
+Portfolio Section
+========================================================================== */
+.port{
+  padding-top:4em;
+  &__title{text-decoration: underline;text-align: center;}
+  &__item{
+    &:first-of-type{margin-top:0;}
+    margin:6em auto;
+    width: 90%;
+    max-width: 60em;
+    img{max-width:100%;}
+  }
+}
+/* =========================================================================
+Footer
+========================================================================== */
+footer{
+  padding: 14px 0
 }
