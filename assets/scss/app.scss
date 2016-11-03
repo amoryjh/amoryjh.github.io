@@ -13,11 +13,10 @@ $pnk: #DB0A5B;
 /* =========================================================================
 Typography
 ========================================================================== */
-//Emojis for da boyzzzzzzz
 .emoji{font-weight:400;font-family:"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Segoe UI Symbol","Android Emoji",EmojiSymbols}
 $base-font: 14px;
 html{
-  background-color:$black;
+  background-color:#fff;
 }
 body{
 font-family:'Roboto Mono', 'Helvetica', 'Open Sans', 'Arial', sans-serif;
@@ -34,9 +33,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1{
   margin:0.49em 0;
-  font-size:2.5em; font-weight:700;
+  font-size:2.1em; font-weight:700;
   font-family: 'Roboto Mono';
-  @media(min-width:600px){font-size:5em;}
+  @media(min-width:600px){font-size:2.7em;}
 }
 h2{
   font-family:'Roboto Mono',Helvetica,Arial,sans-serif;
@@ -52,8 +51,7 @@ h3{
 }
 a {
   color: #fff;
-  //font-family: 'Roboto Mono', sans-serif;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 p {
   color: #fff;
@@ -85,66 +83,15 @@ a.btn,button.btn{
   text-align: center;
   text-decoration: none;
   &:hover{
-    color: inherit;
-    background: lighten(#F62459,5%);
+    color: #fff;
+    background: darken(#F62459,5%);
   }
-}
-/* =========================================================================
-Flexxin Box
-========================================================================== */
-.inline-flex-box{
-  display: flex;
-  flex-flow: row wrap;
-} 
-.fl-box {
-  width: 31%;
-  margin:1%;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  img {
-    width: 100%;
-  }
-}
-
-/* =========================================================================
-Printing Section
-========================================================================== */
-.prompt{
-  p{
-    color:#fff;
-    text-align: center;
-    font-size: 2em;
-  }
-}
-.output {
-  display:none;
-}
-.active:after {
-  content: '|';
-}
-/*.post-active:last:after{
-  content: '|';
-  animation: blink-c 1.3s infinite;
-}*/
-.post-active:last-of-type{
-  &:after{
-    content: '|';
-    animation: blink-c 1.3s infinite;
-  }
-}
-@keyframes blink-c {
-    0%   {opacity:1}
-    100% {opacity:0;}
 }
 /* =========================================================================
 Siiiiickkkkkk bg
 ========================================================================== */
 .blend-i{
-  //background: linear-gradient(to bottom right, #71ABE7, #A58FD1, #F0AE56);
-  background: linear-gradient(to right, #06A594, #62376E, #D27640);
-  //background: #232323;
+  background: linear-gradient(to top right, #06A594,#62376E,#D27640  );
   position: relative;
   padding: 0;
   padding: 5em 1.3em 8em;
@@ -154,7 +101,7 @@ Siiiiickkkkkk bg
 Name Section
 ========================================================================== */
 .my-name-is{
-  h1{font-size: 2em;}
+  h1{font-size: 2em;text-shadow: 1px 1px 2px $txtblack;}
   a{
     padding: 0.5em;
   }
@@ -166,10 +113,10 @@ Portfolio Section
   padding-top:4em;
   &__title{text-decoration: underline;text-align: center;}
   &__item{
-    &:first-of-type{margin-top:0;}
+    //&:first-of-type{margin-top:0em;}
     margin:6em auto;
-    width: 90%;
-    max-width: 60em;
+    width: 95%;
+    max-width: 38em;
     img{max-width:100%;}
   }
 }
@@ -177,5 +124,7 @@ Portfolio Section
 Footer
 ========================================================================== */
 footer{
-  padding: 14px 0
+  padding: 14px 0;
+  background: $pnk;
+  color: #fff
 }
