@@ -2,6 +2,12 @@
 //@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css';
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans';
+@font-face {
+  font-family: 'BladeRunnerMovieFont';
+  src: url('../fonts/BladeRunnerMovieFont.eot?#iefix') format('embedded-opentype'),  url('../fonts/BladeRunnerMovieFont.woff') format('woff'), url('../fonts/BladeRunnerMovieFont.ttf')  format('truetype'), url('../fonts/BladeRunnerMovieFont.svg#BladeRunnerMovieFont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /* ==========================================================================
 Colors!
 ========================================================================== */
@@ -9,14 +15,14 @@ $brand-color:#d71920;
 $black:#1e1c1f;
 $txtblack: #343534;
 $blu: #00bcd4;
-$pnk: #DB0A5B;
+$pnk: #a80077;
 /* =========================================================================
 Typography
 ========================================================================== */
 .emoji{font-weight:400;font-family:"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Segoe UI Symbol","Android Emoji",EmojiSymbols}
 $base-font: 14px;
 html{
-  background-color:#fff;
+  background-color:$txtblack;
 }
 body{
 font-family:'Roboto Mono', 'Helvetica', 'Open Sans', 'Arial', sans-serif;
@@ -34,7 +40,7 @@ h1,h2,h3,h4,h5,h6 {
 h1{
   margin:0.49em 0;
   font-size:2.1em; font-weight:700;
-  font-family: 'Roboto Mono';
+  font-family: 'BladeRunnerMovieFont','Roboto Mono';
   @media(min-width:600px){font-size:2.7em;}
 }
 h2{
@@ -70,38 +76,36 @@ Buttons
 ========================================================================== */
 a.btn,button.btn{
   margin: 8px 0;
-  //background:#6a3093;
-  background: #F62459;
+  background: $pnk;
   border: none;
   color:#fff;
   font-size: 2em;
   padding: .4em 0;
-  width: 80%;
-  max-width: 12em;
+  width: 100%;
   display: block;
   transition: all 0.3s ease;
   text-align: center;
   text-decoration: none;
   &:hover{
     color: #fff;
-    background: darken(#F62459,5%);
+    background: darken($pnk,5%);
   }
 }
 /* =========================================================================
 Siiiiickkkkkk bg
 ========================================================================== */
 .blend-i{
-  background: linear-gradient(to top right, #06A594,#62376E,#D27640  );
+  background: linear-gradient(to top right, #2B6551, #071819, #102518 );
   position: relative;
   padding: 0;
-  padding: 5em 1.3em 8em;
+  padding: 5em 0 8em;
   overflow: hidden;  
 }
 /* =========================================================================
 Name Section
 ========================================================================== */
 .my-name-is{
-  h1{font-size: 2em;text-shadow: 1px 1px 2px $txtblack;}
+  h1{font-size: 3.1em; text-shadow: 1px 1px 2px $txtblack;}
   a{
     padding: 0.5em;
   }
@@ -113,11 +117,11 @@ Portfolio Section
   padding-top:4em;
   &__title{text-decoration: underline;text-align: center;}
   &__item{
-    //&:first-of-type{margin-top:0em;}
+    &:first-of-type{margin-top:0em;}
     margin:6em auto;
     width: 95%;
     max-width: 38em;
-    img{max-width:100%;}
+    img{max-width:100%;width:100%}
   }
 }
 /* =========================================================================
