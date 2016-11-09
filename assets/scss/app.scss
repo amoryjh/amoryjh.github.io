@@ -1,7 +1,7 @@
 @import '../css/reset';
 //@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css';
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans|Abril+Fatface';
 @font-face {
   font-family: 'BladeRunnerMovieFont';
   src: url('../fonts/BladeRunnerMovieFont.eot?#iefix') format('embedded-opentype'),  url('../fonts/BladeRunnerMovieFont.woff') format('woff'), url('../fonts/BladeRunnerMovieFont.ttf')  format('truetype'), url('../fonts/BladeRunnerMovieFont.svg#BladeRunnerMovieFont') format('svg');
@@ -21,34 +21,32 @@ Typography
 ========================================================================== */
 .emoji{font-weight:400;font-family:"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Segoe UI Symbol","Android Emoji",EmojiSymbols}
 $base-font: 14px;
-html{
-  background-color:$txtblack;
-}
 body{
-font-family:'Roboto Mono', 'Helvetica', 'Open Sans', 'Arial', sans-serif;
+font-family:'Open Sans', 'Arial','Helvetica', 'Roboto Mono', sans-serif;
 font-size: $base-font;
 font-weight: 300;
 @media (min-width:680px){font-size:$base-font  + 1px;}
 @media (min-width:992px){font-size:$base-font  + 2px;}
 @media (min-width:1200px){font-size:$base-font + 4px;}
 @media (min-width:1350px){font-size:$base-font + 6px;}
-color: #fff;
+color: #333;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family:'Roboto Mono', sans-serif;
 }
 h1{
-  margin:0.49em 0;
-  font-size:2.1em; font-weight:700;
-  font-family: 'BladeRunnerMovieFont','Roboto Mono';
-  @media(min-width:600px){font-size:2.7em;}
+  line-height: 1.2em;
+  font-size:2.1em; font-weight:300;
+  font-family:'Abril Fatface','Roboto Mono';
+  @media(min-width:600px){font-size:5.3em;}
+  text-transform: uppercase;
 }
 h2{
   font-family:'Roboto Mono',Helvetica,Arial,sans-serif;
   font-style: italic;
   margin-bottom:0.4em;
   font-size: 1.2em;
-  @media(min-width:600px){font-size:1.6em;}
+  @media(min-width:600px){font-size:2.26em;}
 }
 h3{
   margin-bottom:0.4em;
@@ -56,11 +54,9 @@ h3{
   @media(min-width:600px){font-size:2em;}
 }
 a {
-  color: #fff;
   transition: all 0.3s ease;
 }
 p {
-  color: #fff;
 }
 /* =========================================================================
 Base Html
@@ -92,51 +88,6 @@ a.btn,button.btn{
   }
 }
 /* =========================================================================
-Siiiiickkkkkk bg
-========================================================================== */
-.blend-i{
-  background: linear-gradient(to bottom right, #2B6551,#071819, #102518 );
-  position: relative;
-  padding: 0;
-  padding: 5em 0 8em;
-  overflow: hidden;  
-}
-/* =========================================================================
-Name Section
-========================================================================== */
-.my-name-is{
-  h1{
-    font-size: 2em; 
-    @media(min-width:680px){font-size: 3.1em;}
-    text-shadow: -1px 1px 1px $pnk,
-                 -2px 2px 1px lighten($pnk,3%),
-                 -3px 3px 1px lighten($pnk,6%);
-  }
-  p{margin:2em 0;}
-  a{
-    padding: 0 0.5em;
-  }
-  .mn_Bio{
-    margin:2em auto;
-    padding: 0 12px;
-    max-width: 48em;
-  }
-}
-/* =========================================================================
-Portfolio Section
-========================================================================== */
-.port{
-  padding-top:2em;
-  &__title{text-decoration: underline;text-align: center;}
-  &__item{
-    &:first-of-type{margin-top:4em;}
-    margin:6em auto;
-    width: 95%;
-    max-width: 38em;
-    img{max-width:100%;width:100%}
-  }
-}
-/* =========================================================================
 Footer
 ========================================================================== */
 footer{
@@ -144,3 +95,22 @@ footer{
   background: $pnk;
   color: #fff
 }
+/* =========================================================================
+Intro
+========================================================================== */
+.in_Intro{
+  padding: 10em 5em;
+  p{max-width:50em}
+}
+.sn_Second{
+  background: #f86449;
+  padding: 10em 3.8em;
+  h1{
+    color:#fff55a;font-family: 'Roboto Mono';
+    margin:1em 0
+  }
+  h1 a{font-size: 0.74em; color: #674172}
+
+  h2{font-weight: 100;text-decoration:underline}
+}
+.sn_Slash{color:#fff;}
