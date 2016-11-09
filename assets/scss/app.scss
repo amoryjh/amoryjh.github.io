@@ -104,7 +104,8 @@ Intro
 }
 .sn_Second{
   background: #f86449;
-  padding: 10em 3.8em;
+  padding: 6em 2em;
+  @media(min-width:600px){padding: 10em 3.8em;}
   h1{
     color:#fff55a;font-family: 'Roboto Mono';
     margin:1em 0
