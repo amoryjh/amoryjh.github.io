@@ -39,11 +39,10 @@ h1{
   font-size:2.1em; font-weight:300;
   font-family:'Abril Fatface','Roboto Mono';
   @media(min-width:600px){font-size:5.3em;}
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 h2{
   font-family:'Roboto Mono',Helvetica,Arial,sans-serif;
-  font-style: italic;
   margin-bottom:0.4em;
   font-size: 1.2em;
   @media(min-width:600px){font-size:2.26em;}
@@ -105,13 +104,19 @@ Intro
 .sn_Second{
   background: #f86449;
   padding: 6em 2em;
-  @media(min-width:600px){padding: 10em 3.8em;}
+  @media(min-width:600px){
+    padding: 10em 3.8em;
+  }
   h1{
     color:#fff55a;font-family: 'Roboto Mono';
-    margin:1em 0
+    margin:1em 0;
   }
-  h1 a{font-size: 0.74em; color: #674172}
-
-  h2{font-weight: 100;text-decoration:underline}
+  h1 a{
+    font-size: 0.74em; color: #674172;
+    text-transform: uppercase;
+  }
+  h2{
+    font-weight: 100;
+  }
 }
 .sn_Slash{color:#fff;}
