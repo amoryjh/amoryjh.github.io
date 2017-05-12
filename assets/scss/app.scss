@@ -35,6 +35,7 @@ font-weight: 300;
 @media (min-width:1200px){font-size:$base-font + 4px;}
 @media (min-width:1350px){font-size:$base-font + 6px;}
 color: $lblack;
+background: url(../img/plaid.png);
 }
 h1,h2,h3,h4,h5,h6 {
   font-family:'Roboto Mono', sans-serif;
@@ -194,7 +195,6 @@ Footer
 ========================================================================== */
 footer{
   padding: 14px 0;
-  background: $blu;
   color: #fff;
 }
 .p_Email_CTA{
