@@ -1,6 +1,4 @@
 @import '../css/reset';
-//@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
-//@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css';
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans|Abril+Fatface';
 @font-face {
   font-family: 'BladeRunnerMovieFont';
@@ -46,7 +44,6 @@ h1{
   font-size:2.1em; font-weight:300;
   font-family:'Abril Fatface','Roboto Mono';
   @media(min-width:$mid){font-size:3.3em;}
-  @media(min-width:$lg){font-size:5.25em;}
 }
 h2{
   font-family:'Roboto Mono',Helvetica,Arial,sans-serif;
@@ -112,33 +109,11 @@ Intro
   max-width:40em;
   margin:auto;
   margin-left: 0;
-  //transform: rotate(-4deg);
 }
-.p_Intro_Block_Title{}
-.p_Intro_Block_Para{}
 
 /* =========================================================================
 Portfolio
 ========================================================================== */
-/*
-.p_Port:before,
-.sn_Second:before{
-  content: '';
-  position: absolute;
-  width: 0; height:0;
-  top:-0.85em;
-  border-top: 3em solid $blu;
-  border-left: 3em solid transparent;
-  border-right: 3em solid transparent;
-  @media(min-width:$mid){
-    top: -3em;
-    border-top-width:8em;
-    border-left-width: 8em;
-    border-right-width: 8em;
-  }
-  left:50%;
-  transform:translateX(-50%);
-}*/
 .p_Port{
   background: $orng;
   padding: 3em 2.3em;
@@ -155,6 +130,7 @@ Portfolio
 }
 .p_Port_Item{
   margin:5em 0;
+  transform: skew(5deg);
   @media(min-width:$mid){margin:8em 0;}
 }
 .p_Port_Item:first-of-type{
