@@ -1,11 +1,3 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans|Abril+Fatface';
 html {
   line-height: 1.15;
@@ -15,55 +7,45 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
 
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers (opinionated).
- */
 body {
   margin: 0; }
 
-/**
- * Add the correct display in IE 9-.
- */
 article,
 aside,
 footer,
 header,
 nav,
-section {
-  display: block; }
+section,
+div {
+  display: block;
+  margin: 0; }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul {
+  margin: 0; }
 
-/* Grouping content
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
+img {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
 figcaption,
 figure,
 main {
   /* 1 */
   display: block; }
 
-/**
- * Add the correct margin in IE 8.
- */
 figure {
-  margin: 1em 40px; }
+  margin: 0; }
 
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -72,32 +54,18 @@ hr {
   overflow: visible;
   /* 2 */ }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 pre {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */ }
 
-/* Text-level semantics
-   ========================================================================== */
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
 a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
   /* 2 */ }
 
-/**
- * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -106,24 +74,14 @@ abbr[title] {
   text-decoration: underline dotted;
   /* 2 */ }
 
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
 b,
 strong {
   font-weight: inherit; }
 
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
 b,
 strong {
   font-weight: bolder; }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 code,
 kbd,
 samp {
@@ -132,22 +90,13 @@ samp {
   font-size: 1em;
   /* 2 */ }
 
-/**
- * Add the correct font style in Android 4.3-.
- */
 dfn {
   font-style: italic; }
 
-/**
- * Add the correct background and color in IE 9-.
- */
 mark {
   background-color: #ff0;
   color: #000; }
 
-/**
- * Add the correct font size in all browsers.
- */
 small {
   font-size: 80%; }
 
@@ -169,7 +118,7 @@ sup {
   top: -0.5em; }
 
 /* Embedded content
-   ========================================================================== */
+========================================================================== */
 /**
  * Add the correct display in IE 9-.
  */
@@ -197,7 +146,7 @@ svg:not(:root) {
   overflow: hidden; }
 
 /* Forms
-   ========================================================================== */
+========================================================================== */
 /**
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
@@ -353,7 +302,7 @@ textarea {
   /* 2 */ }
 
 /* Interactive
-   ========================================================================== */
+========================================================================== */
 /*
  * Add the correct display in IE 9-.
  * 1. Add the correct display in Edge, IE, and Firefox.
@@ -369,7 +318,7 @@ summary {
   display: list-item; }
 
 /* Scripting
-   ========================================================================== */
+========================================================================== */
 /**
  * Add the correct display in IE 9-.
  */
@@ -383,7 +332,7 @@ template {
   display: none; }
 
 /* Hidden
-   ========================================================================== */
+========================================================================== */
 /**
  * Add the correct display in IE 10-.
  */
@@ -439,69 +388,54 @@ Typography
   font-family: "Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Segoe UI Symbol","Android Emoji",EmojiSymbols; }
 
 body {
-  font-family: 'Open Sans', 'Arial','Helvetica', 'Roboto Mono', sans-serif;
-  font-size: 14px;
+  font-family: 'Avenir', 'Open Sans','Helvetica', 'Arial', sans-serif;
+  font-size: 18px;
   font-weight: 300;
-  color: #333333; }
-  @media (min-width: 680px) {
+  color: #1e1c1f; }
+  @media (min-width: 600px) {
     body {
-      font-size: 15px; } }
-  @media (min-width: 992px) {
-    body {
-      font-size: 16px; } }
-  @media (min-width: 1200px) {
-    body {
-      font-size: 18px; } }
-  @media (min-width: 1350px) {
+      font-size: 19px; } }
+  @media (min-width: 900px) {
     body {
       font-size: 20px; } }
+  @media (min-width: 1200px) {
+    body {
+      font-size: 21px; } }
+  @media (min-width: 1400px) {
+    body {
+      font-size: 24px; } }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Mono', sans-serif; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Avenir', sans-serif; }
 
 h1 {
-  line-height: 1.2em;
-  font-size: 2.1em;
-  font-weight: 300;
-  font-family: 'Abril Fatface','Roboto Mono'; }
-  @media (min-width: 600px) {
-    h1 {
-      font-size: 3.3em; } }
-
-h2 {
-  font-family: 'Roboto Mono',Helvetica,Arial,sans-serif;
-  margin-bottom: 0.74em;
-  font-size: 1.2em;
-  font-weight: 100; }
-  @media (min-width: 600px) {
-    h2 {
-      font-size: 2.1em; } }
+  line-height: 1.2;
+  font-size: 2em;
+  font-weight: 700; }
 
 h3 {
-  margin-bottom: 0.4em;
-  font-size: 1.4em; }
-  @media (min-width: 600px) {
-    h3 {
-      font-size: 2em; } }
+  margin-bottom: 0.3em;
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #353535; }
+
+p {
+  margin-bottom: 0.75em;
+  font-weight: 100;
+  line-height: 1.5; }
 
 a {
   transition: all 0.3s ease;
   color: blue; }
 
-p {
-  font-size: 1em;
-  line-height: 1.4em;
-  font-family: 'Roboto Mono', 'Open Sans', 'Arial','Helvetica', sans-serif; }
-  @media (min-width: 600px) {
-    p {
-      font-size: 1.2em; } }
-
 /* =========================================================================
-Base Html
+Reusable
 ========================================================================== */
-section {
-  padding: 8em 0; }
-
 .text-center {
   text-align: center; }
 
@@ -509,142 +443,64 @@ section {
   overflow-y: hidden; }
 
 /* =========================================================================
-Buttons
+Intro Section
 ========================================================================== */
-a.btn, button.btn {
-  margin: 8px 0;
-  background: #a80077;
-  border: none;
-  color: #fff;
-  font-size: 2em;
-  padding: .4em 0;
-  width: 100%;
-  display: block;
-  transition: all 0.3s ease;
-  text-align: center;
-  text-decoration: none; }
-  a.btn:hover, button.btn:hover {
-    color: #fff;
-    background: #8f0065; }
+.intro {
+  padding: 8em 1em 2em;
+  margin: 0 auto; }
+  @media (min-width: 600px) {
+    .intro {
+      padding: 8em 3em 2em;
+      max-width: 600px; } }
+  .intro .intro_Block a:hover {
+    background: #fee1dc; }
 
 /* =========================================================================
-Intro
+Portfolio Section
 ========================================================================== */
-.p_Intro {
-  padding: 1em 2em 2em 1em; }
+.port {
+  padding: 3em 0; }
+
+.port_Item {
+  padding: 2em 1em;
+  margin: 2em 0; }
   @media (min-width: 600px) {
-    .p_Intro {
-      padding: 1em 8em 3.8em 2em; } }
-
-.p_Intro_Block {
-  max-width: 40em;
-  margin: auto;
-  margin-left: 0; }
-
-/* =========================================================================
-Portfolio
-========================================================================== */
-.p_Port {
-  background: #f86449;
-  padding: 3em 2.3em;
-  position: relative; }
-  @media (min-width: 600px) {
-    .p_Port {
-      padding: 6em 2.6em; } }
-  .p_Port h2 {
-    -webkit-transform: skew(3deg, -2deg);
-    -ms-transform: skew(3deg, -2deg);
-    transform: skew(3deg, -2deg); }
-  .p_Port .recent-work {
-    -webkit-transform: skew(1deg, -3deg);
-    -ms-transform: skew(1deg, -3deg);
-    transform: skew(1deg, -3deg); }
-
-.p_Port_Item {
-  margin: 5em 0;
-  -webkit-transform: skew(5deg);
-  -ms-transform: skew(5deg);
-  transform: skew(5deg); }
-  @media (min-width: 600px) {
-    .p_Port_Item {
-      margin: 8em 0; } }
-
-.p_Port_Item:first-of-type {
-  margin-top: 6em; }
-  @media (min-width: 600px) {
-    .p_Port_Item:first-of-type {
-      margin-top: 10em; } }
-
-.p_Port_Item_Title {
-  color: #fff55a;
-  font-family: 'Roboto Mono';
-  text-transform: uppercase;
-  position: relative;
-  z-index: 10;
-  letter-spacing: 0.187em;
-  line-height: 1.35; }
-
-.p_Port_Item_Title:before {
-  content: '';
-  position: absolute;
-  left: -0.4em;
-  top: 0.15em;
-  width: 1.21em;
-  height: 1.21em;
-  background: blue;
-  z-index: -1;
-  -webkit-transform: rotate(18deg);
-  -ms-transform: rotate(18deg);
-  transform: rotate(18deg); }
-  @media (min-width: 600px) {
-    .p_Port_Item_Title:before {
-      left: -0.3em;
-      top: 0em;
-      width: 1.36em;
-      height: 1.4em; } }
-
-.p_Port_Item_Slash {
-  color: #fff;
-  letter-spacing: 0;
-  margin: 0 -0.25em;
-  font-size: 0.65em; }
-
-.p_PortItem_Item_Link {
-  letter-spacing: 0.08em;
-  font-size: 0.85em;
-  text-transform: lowercase;
-  font-family: cursive,'Abril Fatface'; }
-  @media (min-width: 600px) {
-    .p_PortItem_Item_Link {
-      font-size: 0.5em; } }
-
-.p_Port_Item_DetailView {
-  position: fixed;
-  background: #333333;
-  color: #fff;
-  top: 0;
-  z-index: 999;
-  right: -100vw;
-  width: 100vw;
-  bottom: 0;
-  transition: all 1.3s ease;
-  overflow-y: scroll; }
-
-.p_Port_Item_DetailView.ye {
-  right: 0;
-  display: block; }
-
-/* =========================================================================
-Footer
-========================================================================== */
-footer {
-  padding: 14px 0;
-  color: #fff;
-  background: url("../images/plaid.png"); }
-
-.p_Email_CTA {
-  text-align: center; }
-
-.p_Email_CTA_Link {
-  padding: 6px;
-  color: #f86449; }
+    .port_Item {
+      padding: 2em; } }
+  .port_Item .port_Item_image {
+    width: 100%;
+    max-width: 900px;
+    padding: 2em 0;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    border-bottom: 2px solid blue;
+    background: linear-gradient(120deg, #fcb8ab, #fee1dc); }
+  .port_Item .port_Item_content_wrapper {
+    max-width: 900px;
+    margin: 0 auto; }
+  .port_Item .port_Item_content,
+  .port_Item .port_Item_header {
+    padding: .4em 0; }
+    @media (min-width: 600px) {
+      .port_Item .port_Item_content,
+      .port_Item .port_Item_header {
+        padding: .4em 2em; } }
+  .port_Item .port_Item_header-text {
+    margin: 0;
+    max-width: 570px;
+    font-size: 2.5em;
+    font-weight: 700; }
+    @media (min-width: 1200px) {
+      .port_Item .port_Item_header-text {
+        font-size: 3.25em; } }
+  .port_Item .port_Item_visit {
+    margin-top: 3rem; }
+    .port_Item .port_Item_visit .port_Item_Link {
+      font-weight: 300;
+      text-decoration: none;
+      border: 1px solid blue;
+      padding: 8px 16px;
+      position: relative; }
+      .port_Item .port_Item_visit .port_Item_Link:hover {
+        background: #e0e0ff;
+        color: #3333ff; }
