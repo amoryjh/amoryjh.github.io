@@ -1,4 +1,4 @@
-@import '../css/reset';
+@import 'reset';
 @import 'fontfaces';
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans|Abril+Fatface';
 /* ==========================================================================
@@ -100,7 +100,7 @@ Intro
   padding: 1em 2em 2em 1em;
   @media(min-width:$mid){padding: 1em 8em 3.8em 2em;}
 }
-.p_Intro_Block{
+.p_Intro_Block {
   max-width:40em;
   margin:auto;
   margin-left: 0;
@@ -190,7 +190,7 @@ Footer
 footer{
   padding: 14px 0;
   color: #fff;
-  background: url('../img/plaid.png');
+  background: url('../images/plaid.png');
 }
 .p_Email_CTA{
   text-align: center
