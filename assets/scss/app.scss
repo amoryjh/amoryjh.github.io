@@ -1,11 +1,6 @@
 @import '../css/reset';
+@import 'fontfaces';
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans|Abril+Fatface';
-@font-face {
-  font-family: 'BladeRunnerMovieFont';
-  src: url('../fonts/BladeRunnerMovieFont.eot?#iefix') format('embedded-opentype'),  url('../fonts/BladeRunnerMovieFont.woff') format('woff'), url('../fonts/BladeRunnerMovieFont.ttf')  format('truetype'), url('../fonts/BladeRunnerMovieFont.svg#BladeRunnerMovieFont') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 /* ==========================================================================
 Colors!
 ========================================================================== */
@@ -35,7 +30,6 @@ font-weight: 300;
 @media (min-width:1200px){font-size:$base-font + 4px;}
 @media (min-width:1350px){font-size:$base-font + 6px;}
 color: $lblack;
-background: url(../img/plaid.png);
 }
 h1,h2,h3,h4,h5,h6 {
   font-family:'Roboto Mono', sans-serif;
@@ -196,6 +190,7 @@ Footer
 footer{
   padding: 14px 0;
   color: #fff;
+  background: url('../img/plaid.png');
 }
 .p_Email_CTA{
   text-align: center
