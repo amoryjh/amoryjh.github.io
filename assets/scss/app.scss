@@ -106,7 +106,12 @@ Intro Section
 Portfolio Section
 ========================================================================== */
 .port {
-  padding: 3em 0;
+  padding: 6em 0 3em 0;
+}
+
+.port_title {
+  text-align: center;
+  font-weight: 300;
 }
 
 .port_Item {
@@ -119,8 +124,7 @@ Portfolio Section
 
   .port_Item_image {
     width: 100%;
-    max-width: 900px;
-    padding: 2em 0;
+    max-width: 800px;
     margin: 0 auto;
     margin-bottom: 2em;
     border-bottom: 2px solid $blu;
@@ -162,9 +166,11 @@ Portfolio Section
       padding: 8px 16px;
       position: relative;
 
-      &:hover {
+      &:hover,
+      &:focus {
         background: lighten($blu,44%);
         color: lighten($blu,10%);
+        cursor: pointer;
       }
     }
   }

@@ -459,7 +459,11 @@ Intro Section
 Portfolio Section
 ========================================================================== */
 .port {
-  padding: 3em 0; }
+  padding: 6em 0 3em 0; }
+
+.port_title {
+  text-align: center;
+  font-weight: 300; }
 
 .port_Item {
   padding: 2em 1em;
@@ -469,8 +473,7 @@ Portfolio Section
       padding: 2em; } }
   .port_Item .port_Item_image {
     width: 100%;
-    max-width: 900px;
-    padding: 2em 0;
+    max-width: 800px;
     margin: 0 auto;
     margin-bottom: 2em;
     border-bottom: 2px solid blue;
@@ -501,6 +504,7 @@ Portfolio Section
       border: 1px solid blue;
       padding: 8px 16px;
       position: relative; }
-      .port_Item .port_Item_visit .port_Item_Link:hover {
+      .port_Item .port_Item_visit .port_Item_Link:hover, .port_Item .port_Item_visit .port_Item_Link:focus {
         background: #e0e0ff;
-        color: #3333ff; }
+        color: #3333ff;
+        cursor: pointer; }
