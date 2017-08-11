@@ -431,29 +431,25 @@ p {
 
 a {
   transition: all 0.3s ease;
-  color: blue; }
+  color: #FDC4BB; }
 
 /* =========================================================================
 Reusable
 ========================================================================== */
-.text-center {
-  text-align: center; }
-
-.un-scrollable {
-  overflow-y: hidden; }
-
 /* =========================================================================
 Intro Section
 ========================================================================== */
 .intro {
-  padding: 8em 1em 2em;
+  padding: 8em 1em;
   margin: 0 auto; }
   @media (min-width: 600px) {
     .intro {
-      padding: 8em 3em 2em;
+      padding: 7em 3em 12em;
       max-width: 600px; } }
-  .intro .intro_Block a:hover {
-    background: #fee1dc; }
+  .intro .intro_Block a {
+    transition: background 0.3s ease; }
+    .intro .intro_Block a:hover {
+      background: #f5f5f5; }
 
 /* =========================================================================
 Portfolio Section
@@ -499,12 +495,26 @@ Portfolio Section
   .port_Item .port_Item_visit {
     margin-top: 3rem; }
     .port_Item .port_Item_visit .port_Item_Link {
-      font-weight: 300;
+      font-weight: 400;
       text-decoration: none;
-      border: 1px solid blue;
+      border: 3px solid blue;
       padding: 8px 16px;
-      position: relative; }
+      position: relative;
+      color: #3333ff; }
       .port_Item .port_Item_visit .port_Item_Link:hover, .port_Item .port_Item_visit .port_Item_Link:focus {
-        background: #e0e0ff;
-        color: #3333ff;
+        background: #3333ff;
+        color: #fcb8ab;
         cursor: pointer; }
+
+/* =========================================================================
+Footer
+========================================================================== */
+footer {
+  text-align: center; }
+  footer .port_Email_CTA_Link {
+    color: blue;
+    font-weight: 400; }
+  footer .copyright {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1rem 0; }

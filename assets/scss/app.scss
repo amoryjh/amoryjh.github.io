@@ -11,6 +11,7 @@ $orng: #f86449;
 $peach: lighten($orng,30%);
 $yllw:#fff55a;
 $blu: blue;
+$onBrand: #FDC4BB;
 /* ==========================================================================
 Sizes
 ========================================================================== */
@@ -66,18 +67,11 @@ p {
 
 a {
   transition: all 0.3s ease;
-  color: $blu;
+  color: $onBrand;
 }
 /* =========================================================================
 Reusable
 ========================================================================== */
-.text-center{
-  text-align: center;
-}
-.un-scrollable{ 
-  overflow-y:hidden;
-}
-
 @mixin backgroundgradient($colorOne, $colorTwo){
  background: linear-gradient(120deg, $colorOne, $colorTwo);
 }
@@ -85,18 +79,20 @@ Reusable
 Intro Section
 ========================================================================== */
 .intro {
-  padding: 8em 1em 2em;
+  padding: 8em 1em;
   margin: 0 auto;
 
   @media (min-width: $mid) {
-    padding: 8em 3em 2em;
+    padding: 7em 3em 12em;
     max-width: 600px;
   }
 
   .intro_Block {
     a {
+      transition: background 0.3s ease;
+      
       &:hover {
-        background: lighten($orng,30%);
+        background: #f5f5f5;
       }
     }
   }
@@ -129,49 +125,68 @@ Portfolio Section
     margin-bottom: 2em;
     border-bottom: 2px solid $blu;
     @include backgroundgradient(lighten($orng,20%), lighten($orng,30%));
+ }
+
+ .port_Item_content_wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.port_Item_content,
+.port_Item_header {
+  padding: .4em 0;
+
+  @media(min-width: $mid) {
+    padding: .4em 2em;
   }
+}
 
-  .port_Item_content_wrapper {
-    max-width: 900px;
-    margin: 0 auto;
+.port_Item_header-text {
+  margin: 0;
+  max-width: 570px;
+  font-size: 2.5em;
+  font-weight: 700;
+
+  @media(min-width: $xl) {
+    font-size: 3.25em;
   }
+}
 
-  .port_Item_content,
-  .port_Item_header {
-    padding: .4em 0;
+.port_Item_visit {
+  margin-top: 3rem;
 
-    @media(min-width: $mid) {
-      padding: .4em 2em;
+  .port_Item_Link {
+    font-weight: 400;
+    text-decoration: none;
+    border: 3px solid $blu;
+    padding: 8px 16px;
+    position: relative;
+    color: lighten($blu,10%);
+
+
+    &:hover,
+    &:focus {
+      background: lighten($blu,10%);
+      color: lighten($orng,20%);
+      cursor: pointer;
     }
   }
+}
+}
+/* =========================================================================
+Footer
+========================================================================== */
+footer {
+  text-align: center;
 
-  .port_Item_header-text {
-    margin: 0;
-    max-width: 570px;
-    font-size: 2.5em;
+  .port_Email_CTA_Link {
+    color: $blu;
+    font-weight: 400;
+  }
+
+  .copyright {
+    font-size: 1rem;
     font-weight: 700;
-
-    @media(min-width: $xl) {
-      font-size: 3.25em;
-    }
-  }
-
-  .port_Item_visit {
-    margin-top: 3rem;
-
-    .port_Item_Link {
-      font-weight: 300;
-      text-decoration: none;
-      border: 1px solid $blu;
-      padding: 8px 16px;
-      position: relative;
-
-      &:hover,
-      &:focus {
-        background: lighten($blu,44%);
-        color: lighten($blu,10%);
-        cursor: pointer;
-      }
-    }
+    margin: 1rem 0;
   }
 }
