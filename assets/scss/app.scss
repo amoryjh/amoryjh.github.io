@@ -79,15 +79,25 @@ Reusable
 Intro Section
 ========================================================================== */
 .intro {
-  padding: 8em 1em;
   margin: 0 auto;
+  height: 100vh;
+  position: relative;
+  min-height: 375px;
 
   @media (min-width: $mid) {
-    padding: 7em 3em 12em;
-    max-width: 600px;
+    max-width: 680px;
   }
 
   .intro_Block {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    padding: 1.2rem;
+
+    .intro_Block_Title {
+      margin-bottom: 0.75rem;
+    }
+
     a {
       transition: background 0.3s ease;
       
@@ -125,53 +135,53 @@ Portfolio Section
     margin-bottom: 2em;
     border-bottom: 2px solid $blu;
     @include backgroundgradient(lighten($orng,20%), lighten($orng,30%));
- }
-
- .port_Item_content_wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.port_Item_content,
-.port_Item_header {
-  padding: .4em 0;
-
-  @media(min-width: $mid) {
-    padding: .4em 2em;
   }
-}
 
-.port_Item_header-text {
-  margin: 0;
-  max-width: 570px;
-  font-size: 2.5em;
-  font-weight: 700;
-
-  @media(min-width: $xl) {
-    font-size: 3.25em;
+  .port_Item_content_wrapper {
+    max-width: 900px;
+    margin: 0 auto;
   }
-}
 
-.port_Item_visit {
-  margin-top: 3rem;
+  .port_Item_content,
+  .port_Item_header {
+    padding: .4em 0;
 
-  .port_Item_Link {
-    font-weight: 400;
-    text-decoration: none;
-    border: 3px solid $blu;
-    padding: 8px 16px;
-    position: relative;
-    color: lighten($blu,10%);
-
-
-    &:hover,
-    &:focus {
-      background: lighten($blu,10%);
-      color: lighten($orng,20%);
-      cursor: pointer;
+    @media(min-width: $mid) {
+      padding: .4em 2em;
     }
   }
-}
+
+  .port_Item_header-text {
+    margin: 0;
+    max-width: 570px;
+    font-size: 2.5em;
+    font-weight: 700;
+
+    @media(min-width: $xl) {
+      font-size: 3.25em;
+    }
+  }
+
+  .port_Item_visit {
+    margin-top: 3rem;
+
+    .port_Item_Link {
+      font-weight: 400;
+      text-decoration: none;
+      border: 3px solid $blu;
+      padding: 8px 16px;
+      position: relative;
+      color: lighten($blu,10%);
+
+
+      &:hover,
+      &:focus {
+        background: lighten($blu,10%);
+        color: lighten($orng,20%);
+        cursor: pointer;
+      }
+    }
+  }
 }
 /* =========================================================================
 Footer
