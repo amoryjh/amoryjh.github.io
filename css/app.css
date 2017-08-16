@@ -447,6 +447,8 @@ Intro Section
   @media (min-width: 600px) {
     .intro {
       max-width: 680px; } }
+  .intro .intro_Block_Title {
+    margin-bottom: 0.75rem; }
   .intro .intro_Block {
     top: 50%;
     position: relative;
@@ -454,8 +456,6 @@ Intro Section
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding: 1.2rem; }
-    .intro .intro_Block .intro_Block_Title {
-      margin-bottom: 0.75rem; }
     .intro .intro_Block a {
       transition: background 0.3s ease; }
       .intro .intro_Block a:hover {
