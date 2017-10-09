@@ -75,25 +75,6 @@ Reusable
 @mixin backgroundgradient($colorOne, $colorTwo){
  background: linear-gradient(120deg, $colorOne, $colorTwo);
 }
-
-@mixin blue-button() {
-  font-weight: 400;
-  text-decoration: none;
-  border: 3px solid $blu;
-  padding: 8px 16px;
-  position: relative;
-  color: lighten($blu,10%);
-
-
-  &:hover,
-  &:focus {
-    background: lighten($blu,10%);
-    color: lighten($orng,20%);
-    cursor: pointer;
-  }
-}
-
-
 /* =========================================================================
 Intro Section
 ========================================================================== */
@@ -116,14 +97,14 @@ Intro Section
     position: relative;
     transform: translateY(-50%);
     padding: 1.2rem;
-  }
 
-  .intro_Block_Para-visit {
-    margin-top: 3rem;
-  }
-
-  .intro-visit-button {
-    @include blue-button();
+    a {
+      transition: background 0.3s ease;
+      
+      &:hover {
+        background: #f5f5f5;
+      }
+    }
   }
 }
 
@@ -183,6 +164,23 @@ Portfolio Section
 
   .port_Item_visit {
     margin-top: 2rem;
+
+    .port_Item_Link {
+      font-weight: 400;
+      text-decoration: none;
+      border: 3px solid $blu;
+      padding: 8px 16px;
+      position: relative;
+      color: lighten($blu,10%);
+
+
+      &:hover,
+      &:focus {
+        background: lighten($blu,10%);
+        color: lighten($orng,20%);
+        cursor: pointer;
+      }
+    }
   }
 }
 /* =========================================================================
