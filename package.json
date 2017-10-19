@@ -4,7 +4,6 @@
   "description": "Portfolio items & stuff.",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.1",
     "npm": "^5.4.2"
   },
   "devDependencies": {

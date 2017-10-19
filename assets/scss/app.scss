@@ -71,6 +71,7 @@ p {
 a {
   transition: all 0.3s ease;
   color: $onBrand;
+  font-weight: 400;
 }
 
 /* =========================================================================
@@ -103,9 +104,7 @@ Intro Section
     transform: translateY(-50%);
     padding: 1.2rem;
 
-    a {
-      transition: background 0.3s ease;
-      
+    a {      
       &:hover {
         background: #f5f5f5;
       }
