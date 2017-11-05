@@ -31,7 +31,7 @@ Typography
     font-family: "Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Segoe UI Symbol","Android Emoji",EmojiSymbols;
 }
 
-$base-font: 18px;
+$base-font: 20px;
 
 body {
     font-family: 'Avenir', 'Open Sans','Helvetica', 'Arial', sans-serif;
@@ -40,7 +40,7 @@ body {
     color: $black;
 
     @media (min-width: $mid) {
-        font-size: $base-font + 3px;
+        font-size: $base-font + 2px;
     }
 }
 
