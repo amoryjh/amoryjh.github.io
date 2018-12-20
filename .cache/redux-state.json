@@ -733,11 +733,101 @@
         "owner": "internal-data-bridge"
       }
     },
+    "63e5f7ff-e5f1-58f7-8e2c-55872ac42281": {
+      "resolve": "/Users/joshhanson/Documents/myproject/node_modules/gatsby-plugin-offline",
+      "id": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
+      "name": "gatsby-plugin-offline",
+      "version": "2.0.19",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPages",
+        "onPostBuild"
+      ],
+      "browserAPIs": [
+        "registerServiceWorker",
+        "onServiceWorkerActive",
+        "onPostPrefetchPathname"
+      ],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/joshhanson/Documents/myproject/node_modules/gatsby-plugin-offline",
+      "packageJson": {
+        "name": "gatsby-plugin-offline",
+        "description": "Gatsby plugin which sets up a site to be able to run offline",
+        "version": "2.0.19",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "offline",
+          "precache",
+          "service-worker"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "idb-keyval",
+            "version": "^3.1.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "workbox-build",
+            "version": "^3.6.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.3"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">=2.0.53"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e89a120f31edf322933c4796fdd36160",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "7374ebf2-d961-52ee-92a2-c25e7cb387a9": {
       "resolve": "/Users/joshhanson/Documents/myproject",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "147b3eecfacba96ee86a4ba2336b562e",
+      "version": "0ebbf1ba720c7e88bc7aa47631b8cc35",
       "pluginOptions": {
         "plugins": []
       },
@@ -817,7 +907,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "b27b78e0230aa91a1a931b89f2da244b",
+        "contentDigest": "e03ac80b438731fa2a9572490ae33958",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -930,12 +1020,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-12-20T03:03:18.405Z",
+      "buildTime": "2018-12-20T03:25:09.175Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "5345f3d3076008d965d1bdace1739554",
+        "contentDigest": "fbd8fde4d97bda6d3d12742c80c64d0d",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -945,7 +1035,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8bffa9dcb470ca201db5542880fa3f6c",
+        "contentDigest": "65aee5f5c3bcaee49cb894aa1c772ddd",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -956,10 +1046,10 @@
       "extension": "",
       "size": 128,
       "prettySize": "128 B",
-      "modifiedTime": "2018-12-14T04:52:24.277Z",
-      "accessTime": "2018-12-20T03:03:21.637Z",
-      "changeTime": "2018-12-14T04:56:08.132Z",
-      "birthTime": "2018-12-14T04:52:24.276Z",
+      "modifiedTime": "2018-12-20T03:05:50.656Z",
+      "accessTime": "2018-12-20T03:25:12.952Z",
+      "changeTime": "2018-12-20T03:05:50.656Z",
+      "birthTime": "2018-12-20T03:05:50.655Z",
       "root": "/",
       "dir": "/Users/joshhanson/Documents/myproject/src",
       "base": "images",
@@ -973,16 +1063,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 8592496424,
+      "ino": 8592735009,
       "blocks": 0,
-      "atimeMs": 1545275001637.2498,
-      "mtimeMs": 1544763144277.432,
-      "ctimeMs": 1544763368132.1863,
-      "birthtimeMs": 1544763144275.5276,
-      "atime": "2018-12-20T03:03:21.637Z",
-      "mtime": "2018-12-14T04:52:24.277Z",
-      "ctime": "2018-12-14T04:56:08.132Z",
-      "birthtime": "2018-12-14T04:52:24.276Z"
+      "atimeMs": 1545276312952.2405,
+      "mtimeMs": 1545275150656.365,
+      "ctimeMs": 1545275150656.365,
+      "birthtimeMs": 1545275150654.9727,
+      "atime": "2018-12-20T03:25:12.952Z",
+      "mtime": "2018-12-20T03:05:50.656Z",
+      "ctime": "2018-12-20T03:05:50.656Z",
+      "birthtime": "2018-12-20T03:05:50.655Z"
     },
     "a52bc883-72b0-5176-895b-f60429ccf9fb": {
       "id": "a52bc883-72b0-5176-895b-f60429ccf9fb",
@@ -1003,10 +1093,10 @@
       "extension": "png",
       "size": 21212,
       "prettySize": "21.2 kB",
-      "modifiedTime": "2018-12-14T04:52:24.278Z",
-      "accessTime": "2018-12-20T02:51:32.009Z",
-      "changeTime": "2018-12-14T04:56:08.132Z",
-      "birthTime": "2018-12-14T04:52:24.277Z",
+      "modifiedTime": "2018-12-20T03:05:50.657Z",
+      "accessTime": "2018-12-20T03:06:12.096Z",
+      "changeTime": "2018-12-20T03:05:50.657Z",
+      "birthTime": "2018-12-20T03:05:50.656Z",
       "root": "/",
       "dir": "/Users/joshhanson/Documents/myproject/src/images",
       "base": "gatsby-icon.png",
@@ -1020,26 +1110,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 8592496426,
+      "ino": 8592735011,
       "blocks": 48,
-      "atimeMs": 1545274292009.0024,
-      "mtimeMs": 1544763144277.6953,
-      "ctimeMs": 1544763368132.089,
-      "birthtimeMs": 1544763144277.4216,
-      "atime": "2018-12-20T02:51:32.009Z",
-      "mtime": "2018-12-14T04:52:24.278Z",
-      "ctime": "2018-12-14T04:56:08.132Z",
-      "birthtime": "2018-12-14T04:52:24.277Z"
-    },
-    "85c42d3e-64a2-5de5-b2c9-a11ef281710b": {
-      "id": "85c42d3e-64a2-5de5-b2c9-a11ef281710b",
-      "children": [],
-      "parent": "a52bc883-72b0-5176-895b-f60429ccf9fb",
-      "internal": {
-        "contentDigest": "4a9773549091c227cd2eb82ccd9c5e3a",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
+      "atimeMs": 1545275172095.7107,
+      "mtimeMs": 1545275150656.702,
+      "ctimeMs": 1545275150656.702,
+      "birthtimeMs": 1545275150656.3557,
+      "atime": "2018-12-20T03:06:12.096Z",
+      "mtime": "2018-12-20T03:05:50.657Z",
+      "ctime": "2018-12-20T03:05:50.657Z",
+      "birthtime": "2018-12-20T03:05:50.656Z"
     },
     "9219ca8f-51e4-5932-a138-8f1269d76cff": {
       "id": "9219ca8f-51e4-5932-a138-8f1269d76cff",
@@ -1060,10 +1140,10 @@
       "extension": "png",
       "size": 167273,
       "prettySize": "167 kB",
-      "modifiedTime": "2018-12-14T04:52:24.277Z",
-      "accessTime": "2018-12-20T03:03:21.637Z",
-      "changeTime": "2018-12-14T04:56:08.131Z",
-      "birthTime": "2018-12-14T04:52:24.276Z",
+      "modifiedTime": "2018-12-20T03:05:50.656Z",
+      "accessTime": "2018-12-20T03:06:12.092Z",
+      "changeTime": "2018-12-20T03:05:50.656Z",
+      "birthTime": "2018-12-20T03:05:50.655Z",
       "root": "/",
       "dir": "/Users/joshhanson/Documents/myproject/src/images",
       "base": "gatsby-astronaut.png",
@@ -1077,16 +1157,26 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 8592496425,
+      "ino": 8592735010,
       "blocks": 328,
-      "atimeMs": 1545275001637.47,
-      "mtimeMs": 1544763144277.1985,
-      "ctimeMs": 1544763368130.7012,
-      "birthtimeMs": 1544763144276.065,
-      "atime": "2018-12-20T03:03:21.637Z",
-      "mtime": "2018-12-14T04:52:24.277Z",
-      "ctime": "2018-12-14T04:56:08.131Z",
-      "birthtime": "2018-12-14T04:52:24.276Z"
+      "atimeMs": 1545275172091.8816,
+      "mtimeMs": 1545275150656.1528,
+      "ctimeMs": 1545275150656.1528,
+      "birthtimeMs": 1545275150655.0654,
+      "atime": "2018-12-20T03:06:12.092Z",
+      "mtime": "2018-12-20T03:05:50.656Z",
+      "ctime": "2018-12-20T03:05:50.656Z",
+      "birthtime": "2018-12-20T03:05:50.655Z"
+    },
+    "85c42d3e-64a2-5de5-b2c9-a11ef281710b": {
+      "id": "85c42d3e-64a2-5de5-b2c9-a11ef281710b",
+      "children": [],
+      "parent": "a52bc883-72b0-5176-895b-f60429ccf9fb",
+      "internal": {
+        "contentDigest": "4a9773549091c227cd2eb82ccd9c5e3a",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
     },
     "3ce284e1-cc47-5a44-a29d-3a310de13e36": {
       "id": "3ce284e1-cc47-5a44-a29d-3a310de13e36",
@@ -1096,6 +1186,26 @@
         "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "SitePage /offline-plugin-app-shell-fallback/": {
+      "jsonName": "offline-plugin-app-shell-fallback-a30",
+      "internalComponentName": "ComponentOfflinePluginAppShellFallback",
+      "path": "/offline-plugin-app-shell-fallback/",
+      "component": "/Users/joshhanson/Documents/myproject/node_modules/gatsby-plugin-offline/app-shell.js",
+      "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
+      "context": {},
+      "pluginCreator___NODE": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
+      "pluginCreatorId": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
+      "componentPath": "/Users/joshhanson/Documents/myproject/node_modules/gatsby-plugin-offline/app-shell.js",
+      "id": "SitePage /offline-plugin-app-shell-fallback/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "406a28c06ff9470e94c657ea742e5334",
+        "description": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
+        "owner": "internal-data-bridge"
       }
     },
     "SitePage /404/": {
@@ -1181,7 +1291,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "e949a2aa51425ab615b6e3e191d417b1"
+    "PLUGINS_HASH": "c32314cf96c1170269c73b9631d358d5"
   },
   "componentDataDependencies": {
     "nodes": {
@@ -1206,9 +1316,14 @@
     "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
     "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
     "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
-    "sq--src-components-image-js": 2011440971
+    "sq--src-components-image-js": 2011440971,
+    "offline-plugin-app-shell-fallback-a30": "520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E"
   },
   "components": {
+    "/Users/joshhanson/Documents/myproject/node_modules/gatsby-plugin-offline/app-shell.js": {
+      "query": "",
+      "componentPath": "/Users/joshhanson/Documents/myproject/node_modules/gatsby-plugin-offline/app-shell.js"
+    },
     "/Users/joshhanson/Documents/myproject/src/pages/404.js": {
       "query": "",
       "componentPath": "/Users/joshhanson/Documents/myproject/src/pages/404.js"
@@ -1223,14 +1338,6 @@
     }
   },
   "staticQueryComponents": {
-    "sq--src-components-image-js": {
-      "name": "usersJoshhansonDocumentsMyprojectSrcComponentsImageJs2011440971",
-      "componentPath": "/Users/joshhanson/Documents/myproject/src/components/image.js",
-      "id": "sq--src-components-image-js",
-      "jsonName": "sq--src-components-image-js",
-      "query": "query usersJoshhansonDocumentsMyprojectSrcComponentsImageJs2011440971 {\n  placeholderImage: file(relativePath: {eq: \"gatsby-astronaut.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 300) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
-      "hash": 2011440971
-    },
     "sq--src-components-layout-js": {
       "name": "SiteTitleQuery",
       "componentPath": "/Users/joshhanson/Documents/myproject/src/components/layout.js",
@@ -1238,6 +1345,14 @@
       "jsonName": "sq--src-components-layout-js",
       "query": "query SiteTitleQuery {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n}\n",
       "hash": 755544856
+    },
+    "sq--src-components-image-js": {
+      "name": "usersJoshhansonDocumentsMyprojectSrcComponentsImageJs2011440971",
+      "componentPath": "/Users/joshhanson/Documents/myproject/src/components/image.js",
+      "id": "sq--src-components-image-js",
+      "jsonName": "sq--src-components-image-js",
+      "query": "query usersJoshhansonDocumentsMyprojectSrcComponentsImageJs2011440971 {\n  placeholderImage: file(relativePath: {eq: \"gatsby-astronaut.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 300) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
+      "hash": 2011440971
     },
     "sq--src-components-seo-js": {
       "name": "DefaultSEOQuery",
