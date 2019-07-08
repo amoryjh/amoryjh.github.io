@@ -1,7 +1,7 @@
 module.exports = [{
-      plugin: require('/Users/joshhanson/Documents/myproject/node_modules/gatsby-plugin-offline/gatsby-browser'),
+      plugin: require('/Users/joshhanson/Documents/Personal/myproject/node_modules/gatsby-plugin-offline/gatsby-browser'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/joshhanson/Documents/myproject/gatsby-browser.js'),
+      plugin: require('/Users/joshhanson/Documents/Personal/myproject/gatsby-browser.js'),
       options: {"plugins":[]},
     }]

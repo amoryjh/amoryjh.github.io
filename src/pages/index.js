@@ -6,7 +6,7 @@ import SEO from '../components/seo'
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Home" keywords={['gatsby', 'ecommerce', 'react', 'expressionengine', 'wordpress', 'niagara', 'web design']} />
+        <SEO title="Home" keywords={['gatsby', 'ecommerce', 'react', 'expressionengine', 'wordpress', 'hamilton', 'niagara', 'web design']} />
         <main className="page-content" aria-label="Content">
             <div className="home">
                 <section className="intro">
@@ -14,11 +14,14 @@ const IndexPage = () => (
                         <p className="intro_Block_Para">
                             Hi there <span className="emoji" aria-label="waving hand emoji" role="img">👋</span>
                         </p>
+
                         <p className="intro_Block_Para">
-                            I'm Joshua Hanson - I work with the team <a href="http://formandaffect.com" target="_blank" rel="noopener noreferrer">@Form &amp; Affect </a>  building brands, online stores, web apps, and digital gems <span className="emoji" aria-label="diamond emoji" role="img">💎</span>
+                            I'm Joshua Hanson - I work with the team <a href="https://hifyreretail.com/" rel="noopener noreferrer" target="_blank">@Hifyre</a> building
+                            eCommerce and web products for the cannabis industry
                         </p>
                         <p className="intro_Block_Para">
-                            Previously I've worked for <a href="http://ncinnovation.ca" target="_blank" rel="noopener noreferrer">@Niagara College</a>,
+                            Previously I've worked for <a href="http://formandaffect.com" rel="noopener noreferrer" target="_blank">@Form &amp; Affect</a>, 
+                            <a href="http://ncinnovation.ca" target="_blank" rel="noopener noreferrer">@Niagara College</a>,
                             and <a href="http://www.northern.co/" target="_blank" rel="noopener noreferrer">@Northern Commerce</a>.
                         </p>
 
