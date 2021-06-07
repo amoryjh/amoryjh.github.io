@@ -5,7 +5,6 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "data.js": "^0.11.5",
-    "fs": "0.0.1-security",
     "gatsby": "^2.0.53",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-manifest": "^2.0.9",
@@ -15,10 +14,12 @@
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-source-thirdparty": "^1.0.6",
     "gatsby-transformer-sharp": "^2.1.8",
+    "node-pre-gyp": "0.12.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "styled-components": "^5.3.0"
   },
   "keywords": [
     "gatsby"
