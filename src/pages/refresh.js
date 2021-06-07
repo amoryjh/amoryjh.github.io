@@ -2,16 +2,47 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import styled, { keyframes } from "styled-components";
 
-// SEO
-// import SEO from '../components/seo'
-
 // Assets
 import css from "../assets/main.css";
 import heroBG from "../assets/ID-Hero.jpg";
 import heroMobile from "../assets/ID-Mobile.jpg";
 import chairsSample from "../assets/chairs-sample.jpeg";
 import lightingDesk from "../assets/lighting-desk.jpeg";
-import tag from "../assets/tag.svg";
+
+// Icons
+const tagIcon = (color) => (
+  <svg
+    width="20px"
+    height="20px"
+    viewBox="0 0 20 20"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+  >
+    <defs>
+      <path
+        d="M30.41,20.58 L21.41,11.58 C21.05,11.22 20.55,11 20,11 L13,11 C11.9,11 11,11.9 11,13 L11,20 C11,20.55 11.22,21.05 11.59,21.42 L20.59,30.42 C20.95,30.78 21.45,31 22,31 C22.55,31 23.05,30.78 23.41,30.41 L30.41,23.41 C30.78,23.05 31,22.55 31,22 C31,21.45 30.77,20.94 30.41,20.58 Z M14.5,16 C13.67,16 13,15.33 13,14.5 C13,13.67 13.67,13 14.5,13 C15.33,13 16,13.67 16,14.5 C16,15.33 15.33,16 14.5,16 Z"
+        id="path-1"
+      ></path>
+    </defs>
+    <g
+      id="Desktop"
+      stroke="none"
+      strokeWidth="1"
+      fill="none"
+      fillRule="evenodd"
+    >
+      <g transform="translate(-269.000000, -443.000000)">
+        <g transform="translate(258.000000, 432.000000)">
+          <mask fill={color}>
+            <use xlinkHref="#path-1"></use>
+          </mask>
+          <use fill={color} fillRule="nonzero" xlinkHref="#path-1"></use>
+        </g>
+      </g>
+    </g>
+  </svg>
+);
 
 const arrowIcon = (color) => (
   <svg
@@ -32,6 +63,7 @@ const arrowIcon = (color) => (
   </svg>
 );
 
+// Products
 const productList = [
   {
     id: "358",
@@ -130,20 +162,24 @@ const productList = [
   },
 ];
 
+// The Refresh Page
 const RefreshSale = () => {
   const [state, setState] = useState({
     openDialog: -1,
     currentProduct: {},
   });
 
+  // Product Tag/Circle
   const ProdInfo = (props) => {
+    const tagColor = props.id === state.openDialog ? "#fff" : "#676564";
     return (
-      <TagImg onClick={() => handleTagClick(props)} transform={props.transform}>
-        <img src={tag} alt="" />
+      <TagImg onClick={() => handleTagClick(props)} transform={props.transform} active={props.id === state.openDialog}>
+        {tagIcon(tagColor)}
       </TagImg>
     );
   };
 
+  // Handle click on product tag
   const handleTagClick = (props) => {
     console.log(props);
     const prodID = props.id;
@@ -155,6 +191,7 @@ const RefreshSale = () => {
     });
   };
 
+  // Invisible overlay behind content, click and closes all dialogs
   const handleBackgroundClick = () => {
     setState({
       ...state,
@@ -162,6 +199,7 @@ const RefreshSale = () => {
     });
   };
 
+  // Dialog component
   const DialogComponent = (prod) => {
     if (!prod) return "";
     return (
@@ -187,6 +225,7 @@ const RefreshSale = () => {
     );
   };
 
+  // Render main page
   return (
     <div className="refresh-page">
       <div style={{ position: "relative" }}>
@@ -230,6 +269,8 @@ const RefreshSale = () => {
           </RoomPreview>
         </div>
       </div>
+
+      {/* Bonus content */}
       <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 1rem" }}>
         <h2 style={{ textAlign: "center", margin: "2em 0" }}>
           Here’s what’s new
@@ -391,7 +432,7 @@ const RoomPreview = styled.div`
 
 const TagImg = styled.div`
   display: flex;
-  background: #dc6666;
+  background: ${(props) => (props.active ? "#dc6666" : "white")};
   box-shadow: 0 0 2px 0 rgba(21, 21, 21, 0.05),
     0 1px 5px 0 rgba(21, 21, 21, 0.15);
   width: 30px;
@@ -405,7 +446,7 @@ const TagImg = styled.div`
   );
   position: relative;
   z-index: 20;
-  img {
+  svg {
     width: 16px;
   }
 
@@ -416,7 +457,7 @@ const TagImg = styled.div`
       ${(props) => props.transform.desktop.left},
       ${(props) => props.transform.desktop.top}
     );
-    img {
+    svg {
       width: 20px;
     }
   }
